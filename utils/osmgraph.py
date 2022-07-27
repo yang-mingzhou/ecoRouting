@@ -78,9 +78,9 @@ class OsmGraph:
         fig, ax = ox.plot_graph_routes(self.graph, pathList, route_colors=['g', 'r', 'b'], node_size=5)
         fig.savefig(filename)
 
-
-    # plot map matching results
-    def plotRoutes(self, routeList, network_gdf, colorLists, nameLists):
+    @staticmethod
+    def plotRoutes(routeList, network_gdf, colorLists, nameLists): \
+        # plot map matching results
         directory = './results'
         if not os.path.exists(directory):
             os.makedirs(directory)
@@ -130,7 +130,7 @@ class OsmGraph:
                               'zoom': zoom})
         plotly.offline.plot(fig, filename=os.path.join(directory, 'resultnewdropped.html'), auto_open=True)
 
-
+    @staticmethod
     def plot_traj(data):
         lat = data['gps_Latitude'].tolist()
         long = data['gps_Longitude'].tolist()

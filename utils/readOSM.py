@@ -13,7 +13,8 @@ class XMLResource:
         box = Box(-93.4975, -93.1850, 44.7458, 45.0045)
         self.paths = self.__getPaths(box)
 
-    def __readXML(self, filename):
+    @staticmethod
+    def __readXML(filename):
         domTree = ET.parse(filename)
         root = domTree.getroot()
         ways = root.findall("way")
@@ -87,7 +88,8 @@ class ReadOSMFile:
         # fig, ax = ox.plot_graph(osmGraph.graph)
         return osmGraph
 
-    def outputTrajForMapMatching(self, trajList, outputFile):
+    @staticmethod
+    def outputTrajForMapMatching(trajList, outputFile):
         list_wkt = []
         for i, traj in enumerate(trajList):
             wkt = "LINESTRING("
@@ -98,7 +100,8 @@ class ReadOSMFile:
         df_wkt = pd.DataFrame(list_wkt, columns=['id', 'geom'])
         df_wkt.to_csv(outputFile, sep=";", index=False, line_terminator='\n')
 
-    def save_graph_shapefile_directional(self, graph, filepath=None, encoding="utf-8"):
+    @staticmethod
+    def save_graph_shapefile_directional(graph, filepath=None, encoding="utf-8"):
         # default filepath if none was provided
         if filepath is None:
             filepath = os.path.join(ox.settings.data_folder, "graph_shapefile")
@@ -128,7 +131,8 @@ class ReadOSMFile:
         df_matched["cpath_list"] = df_matched['cpath'].apply(lambda x: self.extract_path(x))
         return list(df_matched['cpath_list'])
 
-    def extract_path(self, path):
+    @staticmethod
+    def extract_path(path):
         '''Divide the map-matched results connected by commas into a list.
         Args:
             opath: Map-matched results connected by commas
