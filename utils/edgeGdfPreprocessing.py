@@ -64,9 +64,7 @@ def edgePreprocessing(nodesGdf, edgesGdf,temperature, mass,dayOfTheWeek, timeOfT
 
     edgesGdf['categoricalFeature'] = edgesGdf.apply(lambda x: categoricalFeature(x), axis=1)
 
-    print("number of original edges",len(edgesGdf))
     edgesWithoutBlackList = edgesGdf[edgesGdf['isBlackList'] == False]
-    print("number of cutted edge", len(edgesWithoutBlackList))
     edgesWithoutBlackList.reset_index(drop=True, inplace=True)
     return edgesWithoutBlackList
 

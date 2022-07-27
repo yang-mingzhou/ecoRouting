@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as ET
-from code.spaitalShape import Point, OdPair, Box
+from utils.spaitalShape import Point, OdPair, Box
 import os
-from code.osmgraph import GraphFromBbox, GraphFromHmlFile, GraphFromGdfs
+from utils.osmgraph import GraphFromBbox, GraphFromHmlFile, GraphFromGdfs
 import pandas as pd
 import osmnx as ox
 import geopandas as gpd

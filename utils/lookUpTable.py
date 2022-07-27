@@ -1,6 +1,6 @@
 import gc
 import pickle
-from code.edgeGdfPreprocessing import edgePreprocessing
+from utils.edgeGdfPreprocessing import edgePreprocessing
 import torch
 from torch.utils.data import DataLoader
 from tqdm import tqdm

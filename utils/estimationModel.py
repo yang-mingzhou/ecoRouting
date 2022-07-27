@@ -1,5 +1,5 @@
 import torch
-from code.nets import AttentionBlk
+from utils.nets import AttentionBlk
 from torch.utils.data import DataLoader
 import numpy as np
 import gc

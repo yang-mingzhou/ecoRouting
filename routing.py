@@ -1,13 +1,13 @@
 import numpy as np
 import os
 import pandas as pd
-from code.osmgraph import GraphFromBbox, GraphFromHmlFile, GraphFromGdfs
-from code.spaitalShape import Point, OdPair, Box
-from code.edgeGdfPreprocessing import edgePreprocessing
+from utils.osmgraph import GraphFromBbox, GraphFromHmlFile, GraphFromGdfs
+from utils.spaitalShape import Point, OdPair, Box
+from utils.edgeGdfPreprocessing import edgePreprocessing
 import plotly.graph_objects as go
 import plotly
-from code.estimationModel import EstimationModel
-from code.lookUpTable import LookUpTable
+from utils.estimationModel import EstimationModel
+from utils.lookUpTable import LookUpTable
 import gc
 import json
 import time
