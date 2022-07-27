@@ -133,4 +133,5 @@ dmypy.json
 
 results/windowIdDict.pkl
 lookupTables/
-
+Graphs/
+data/graph_shapefile/

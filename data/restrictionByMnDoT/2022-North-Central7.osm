@@ -1,0 +1,800 @@
+<?xml version="1.0"?>
+<osm generator="Merkaartor 0.16" version="0.6">
+  <node version="9999" lon="-92.42484536" lat="46.66396508" timestamp="2022-03-07T11:49:27Z" user="" id="-112343096" actor="0"/>
+  <node version="9999" lon="-92.42265769" lat="46.66394506" timestamp="2022-03-07T11:49:27Z" user="" id="-112333616" actor="0"/>
+  <node version="9999" lon="-92.42026497" lat="46.66392397" timestamp="2022-03-07T11:49:27Z" user="" id="-112333736" actor="0"/>
+  <node version="9999" lon="-92.41877002" lat="46.66391187" timestamp="2022-03-07T11:49:27Z" user="" id="-112333856" actor="0"/>
+  <node version="9999" lon="-92.41841320" lat="46.66393796" timestamp="2022-03-07T11:49:27Z" user="" id="-112333976" actor="0"/>
+  <node version="9999" lon="-92.41683777" lat="46.66441056" timestamp="2022-03-07T11:49:27Z" user="" id="-112336016" actor="0"/>
+  <node version="9999" lon="-92.41554946" lat="46.66467216" timestamp="2022-03-07T11:49:27Z" user="" id="-112334456" actor="0"/>
+  <node version="9999" lon="-92.41075539" lat="46.66491441" timestamp="2022-03-07T11:49:27Z" user="" id="-112334936" actor="0"/>
+  <node version="9999" lon="-92.40878857" lat="46.66487745" timestamp="2022-03-07T11:49:27Z" user="" id="-112335296" actor="0"/>
+  <node version="9999" lon="-92.40664779" lat="46.66471887" timestamp="2022-03-07T11:49:27Z" user="" id="-112334096" actor="0"/>
+  <node version="9999" lon="-92.40473866" lat="46.66474920" timestamp="2022-03-07T11:49:27Z" user="" id="-112334216" actor="0"/>
+  <node version="9999" lon="-92.40425165" lat="46.66477594" timestamp="2022-03-07T11:49:27Z" user="" id="-112334816" actor="0"/>
+  <node version="9999" lon="-92.40347195" lat="46.66480965" timestamp="2022-03-07T11:49:27Z" user="" id="-112334336" actor="0"/>
+  <node version="9999" lon="-92.40259687" lat="46.66468438" timestamp="2022-03-07T11:49:27Z" user="" id="-112333136" actor="0"/>
+  <node version="9999" lon="-92.40098964" lat="46.66445911" timestamp="2022-03-07T11:49:27Z" user="" id="-112334696" actor="0"/>
+  <node version="9999" lon="-92.40029375" lat="46.66444197" timestamp="2022-03-07T11:49:27Z" user="" id="-112335416" actor="0"/>
+  <node version="9999" lon="-92.39963110" lat="46.66437551" timestamp="2022-03-07T11:49:27Z" user="" id="-112336376" actor="0"/>
+  <node version="9999" lon="-92.39952816" lat="46.66431736" timestamp="2022-03-07T11:49:27Z" user="" id="-112333256" actor="0"/>
+  <node version="9999" lon="-92.39937022" lat="46.66417616" timestamp="2022-03-07T11:49:27Z" user="" id="-112333496" actor="0"/>
+  <node version="9999" lon="-92.39926484" lat="46.66402711" timestamp="2022-03-07T11:49:27Z" user="" id="-112336496" actor="0"/>
+  <node version="9999" lon="-92.39921018" lat="46.66372535" timestamp="2022-03-07T11:49:27Z" user="" id="-112335056" actor="0"/>
+  <node version="9999" lon="-92.39919565" lat="46.66348680" timestamp="2022-03-07T11:49:27Z" user="" id="-112335536" actor="0"/>
+  <node version="9999" lon="-92.39912530" lat="46.66231651" timestamp="2022-03-07T11:49:27Z" user="" id="-112334576" actor="0"/>
+  <node version="9999" lon="-92.39903966" lat="46.66090317" timestamp="2022-03-07T11:49:27Z" user="" id="-112335896" actor="0"/>
+  <node version="9999" lon="-92.39894588" lat="46.66052022" timestamp="2022-03-07T11:49:27Z" user="" id="-112336256" actor="0"/>
+  <node version="9999" lon="-92.39852399" lat="46.66010851" timestamp="2022-03-07T11:49:27Z" user="" id="-112335656" actor="0"/>
+  <node version="9999" lon="-92.39814145" lat="46.65990852" timestamp="2022-03-07T11:49:27Z" user="" id="-112335776" actor="0"/>
+  <node version="9999" lon="-92.39781391" lat="46.65983031" timestamp="2022-03-07T11:49:27Z" user="" id="-112336136" actor="0"/>
+  <node version="9999" lon="-92.39727189" lat="46.65949897" timestamp="2022-03-07T11:49:27Z" user="" id="-112336616" actor="0"/>
+  <node version="9999" lon="-92.39534850" lat="46.65887237" timestamp="2022-03-07T11:49:27Z" user="" id="-112335176" actor="0"/>
+  <node version="9999" lon="-92.39463111" lat="46.65844561" timestamp="2022-03-07T11:49:27Z" user="" id="-112332896" actor="0"/>
+  <node version="9999" lon="-92.39422581" lat="46.65801600" timestamp="2022-03-07T11:49:27Z" user="" id="-112333016" actor="0"/>
+  <node version="9999" lon="-92.39377564" lat="46.65678071" timestamp="2022-03-07T11:49:27Z" user="" id="-112333376" actor="0"/>
+  <node version="9999" lon="-92.39340283" lat="46.65629727" timestamp="2022-03-07T11:49:27Z" user="" id="-112337216" actor="0"/>
+  <node version="9999" lon="-92.39289313" lat="46.65593009" timestamp="2022-03-07T11:49:27Z" user="" id="-112337936" actor="0"/>
+  <node version="9999" lon="-92.39210346" lat="46.65561542" timestamp="2022-03-07T11:49:27Z" user="" id="-112336976" actor="0"/>
+  <node version="9999" lon="-92.39133698" lat="46.65542235" timestamp="2022-03-07T11:49:27Z" user="" id="-112337456" actor="0"/>
+  <node version="9999" lon="-92.39083345" lat="46.65537918" timestamp="2022-03-07T11:49:27Z" user="" id="-112338296" actor="0"/>
+  <node version="9999" lon="-92.38996164" lat="46.65552767" timestamp="2022-03-07T11:49:27Z" user="" id="-112339136" actor="0"/>
+  <node version="9999" lon="-92.38883055" lat="46.65566913" timestamp="2022-03-07T11:49:27Z" user="" id="-112337696" actor="0"/>
+  <node version="9999" lon="-92.38684126" lat="46.65592666" timestamp="2022-03-07T11:49:27Z" user="" id="-112339856" actor="0"/>
+  <node version="9999" lon="-92.38604285" lat="46.65592238" timestamp="2022-03-07T11:49:27Z" user="" id="-112339256" actor="0"/>
+  <node version="9999" lon="-92.38559540" lat="46.65584165" timestamp="2022-03-07T11:49:27Z" user="" id="-112340456" actor="0"/>
+  <node version="9999" lon="-92.38502932" lat="46.65569911" timestamp="2022-03-07T11:49:27Z" user="" id="-112337816" actor="0"/>
+  <node version="9999" lon="-92.38403153" lat="46.65537425" timestamp="2022-03-07T11:49:27Z" user="" id="-112339376" actor="0"/>
+  <node version="9999" lon="-92.38371258" lat="46.65519256" timestamp="2022-03-07T11:49:27Z" user="" id="-112339976" actor="0"/>
+  <node version="9999" lon="-92.38300499" lat="46.65449130" timestamp="2022-03-07T11:49:27Z" user="" id="-112340096" actor="0"/>
+  <node version="9999" lon="-92.38265357" lat="46.65436341" timestamp="2022-03-07T11:49:27Z" user="" id="-112339496" actor="0"/>
+  <node version="9999" lon="-92.38173540" lat="46.65429545" timestamp="2022-03-07T11:49:27Z" user="" id="-112338536" actor="0"/>
+  <node version="9999" lon="-92.38116731" lat="46.65432838" timestamp="2022-03-07T11:49:27Z" user="" id="-112339616" actor="0"/>
+  <node version="9999" lon="-92.37999190" lat="46.65447051" timestamp="2022-03-07T11:49:27Z" user="" id="-112338776" actor="0"/>
+  <node version="9999" lon="-92.37892168" lat="46.65433871" timestamp="2022-03-07T11:49:27Z" user="" id="-112340216" actor="0"/>
+  <node version="9999" lon="-92.37861739" lat="46.65437757" timestamp="2022-03-07T11:49:27Z" user="" id="-112340336" actor="0"/>
+  <node version="9999" lon="-92.37680403" lat="46.65423270" timestamp="2022-03-07T11:49:27Z" user="" id="-112339736" actor="0"/>
+  <node version="9999" lon="-92.37617275" lat="46.65422027" timestamp="2022-03-07T11:49:27Z" user="" id="-112336736" actor="0"/>
+  <node version="9999" lon="-92.37521813" lat="46.65426905" timestamp="2022-03-07T11:49:27Z" user="" id="-112336856" actor="0"/>
+  <node version="9999" lon="-92.37495220" lat="46.65430809" timestamp="2022-03-07T11:49:27Z" user="" id="-112337576" actor="0"/>
+  <node version="9999" lon="-92.37460704" lat="46.65441870" timestamp="2022-03-07T11:49:27Z" user="" id="-112337096" actor="0"/>
+  <node version="9999" lon="-92.37288605" lat="46.65518772" timestamp="2022-03-07T11:49:27Z" user="" id="-112338416" actor="0"/>
+  <node version="9999" lon="-92.37273564" lat="46.65522141" timestamp="2022-03-07T11:49:27Z" user="" id="-112338056" actor="0"/>
+  <node version="9999" lon="-92.37253306" lat="46.65526678" timestamp="2022-03-07T11:49:27Z" user="" id="-112337336" actor="0"/>
+  <node version="9999" lon="-92.37103944" lat="46.65530357" timestamp="2022-03-07T11:49:27Z" user="" id="-112338176" actor="0"/>
+  <node version="9999" lon="-92.37052153" lat="46.65523324" timestamp="2022-03-07T11:49:27Z" user="" id="-112338656" actor="0"/>
+  <node version="9999" lon="-92.36917930" lat="46.65475337" timestamp="2022-03-07T11:49:27Z" user="" id="-112338896" actor="0"/>
+  <node version="9999" lon="-92.36868448" lat="46.65473714" timestamp="2022-03-07T11:49:27Z" user="" id="-112339016" actor="0"/>
+  <node version="9999" lon="-92.36705866" lat="46.65504315" timestamp="2022-03-07T11:49:27Z" user="" id="-111559512" actor="0"/>
+  <node version="9999" lon="-92.36451065" lat="46.65506502" timestamp="2022-03-07T11:49:27Z" user="" id="-111561912" actor="0"/>
+  <node version="9999" lon="-92.36398297" lat="46.65513407" timestamp="2022-03-07T11:49:27Z" user="" id="-111560712" actor="0"/>
+  <node version="9999" lon="-92.36204109" lat="46.65570822" timestamp="2022-03-07T11:49:27Z" user="" id="-111559632" actor="0"/>
+  <node version="9999" lon="-92.36160885" lat="46.65578680" timestamp="2022-03-07T11:49:27Z" user="" id="-111561312" actor="0"/>
+  <node version="9999" lon="-92.36054187" lat="46.65607782" timestamp="2022-03-07T11:49:27Z" user="" id="-111559272" actor="0"/>
+  <node version="9999" lon="-92.35966232" lat="46.65612690" timestamp="2022-03-07T11:49:27Z" user="" id="-111561552" actor="0"/>
+  <node version="9999" lon="-92.35748200" lat="46.65613718" timestamp="2022-03-07T11:49:27Z" user="" id="-111560832" actor="0"/>
+  <node version="9999" lon="-92.35582774" lat="46.65621337" timestamp="2022-03-07T11:49:27Z" user="" id="-111562512" actor="0"/>
+  <node version="9999" lon="-92.35448631" lat="46.65615631" timestamp="2022-03-07T11:49:27Z" user="" id="-111562272" actor="0"/>
+  <node version="9999" lon="-92.35408393" lat="46.65605955" timestamp="2022-03-07T11:49:27Z" user="" id="-111562032" actor="0"/>
+  <node version="9999" lon="-92.35312893" lat="46.65612607" timestamp="2022-03-07T11:49:27Z" user="" id="-111560952" actor="0"/>
+  <node version="9999" lon="-92.35296356" lat="46.65617583" timestamp="2022-03-07T11:49:27Z" user="" id="-111562632" actor="0"/>
+  <node version="9999" lon="-92.35256484" lat="46.65629579" timestamp="2022-03-07T11:49:27Z" user="" id="-111562152" actor="0"/>
+  <node version="9999" lon="-92.35167562" lat="46.65666127" timestamp="2022-03-07T11:49:27Z" user="" id="-111561792" actor="0"/>
+  <node version="9999" lon="-92.35117045" lat="46.65690543" timestamp="2022-03-07T11:49:27Z" user="" id="-111561072" actor="0"/>
+  <node version="9999" lon="-92.35067626" lat="46.65723198" timestamp="2022-03-07T11:49:27Z" user="" id="-111561192" actor="0"/>
+  <node version="9999" lon="-92.35045742" lat="46.65746092" timestamp="2022-03-07T11:49:27Z" user="" id="-111562392" actor="0"/>
+  <node version="9999" lon="-92.34997063" lat="46.65793062" timestamp="2022-03-07T11:49:27Z" user="" id="-111559872" actor="0"/>
+  <node version="9999" lon="-92.34859035" lat="46.65972429" timestamp="2022-03-07T11:49:27Z" user="" id="-111559392" actor="0"/>
+  <node version="9999" lon="-92.34845305" lat="46.65986272" timestamp="2022-03-07T11:49:27Z" user="" id="-111561432" actor="0"/>
+  <node version="9999" lon="-92.34831192" lat="46.65999269" timestamp="2022-03-07T11:49:27Z" user="" id="-111561672" actor="0"/>
+  <node version="9999" lon="-92.34816212" lat="46.66012598" timestamp="2022-03-07T11:49:27Z" user="" id="-111559992" actor="0"/>
+  <node version="9999" lon="-92.34795856" lat="46.66025068" timestamp="2022-03-07T11:49:27Z" user="" id="-111562752" actor="0"/>
+  <node version="9999" lon="-92.34761130" lat="46.66032159" timestamp="2022-03-07T11:49:27Z" user="" id="-111562872" actor="0"/>
+  <node version="9999" lon="-92.34724623" lat="46.66027312" timestamp="2022-03-07T11:49:27Z" user="" id="-111559152" actor="0"/>
+  <node version="9999" lon="-92.34683433" lat="46.66011841" timestamp="2022-03-07T11:49:27Z" user="" id="-111559752" actor="0"/>
+  <node version="9999" lon="-92.34652843" lat="46.65995103" timestamp="2022-03-07T11:49:27Z" user="" id="-111560112" actor="0"/>
+  <node version="9999" lon="-92.34612673" lat="46.65974997" timestamp="2022-03-07T11:49:27Z" user="" id="-111560352" actor="0"/>
+  <node version="9999" lon="-92.34574232" lat="46.65970804" timestamp="2022-03-07T11:49:27Z" user="" id="-111560232" actor="0"/>
+  <node version="9999" lon="-92.34545325" lat="46.65973950" timestamp="2022-03-07T11:49:27Z" user="" id="-111560472" actor="0"/>
+  <node version="9999" lon="-92.34488367" lat="46.65989526" timestamp="2022-03-07T11:49:27Z" user="" id="-111560592" actor="0"/>
+  <node version="9999" lon="-92.34457499" lat="46.65995972" timestamp="2022-03-07T11:49:27Z" user="" id="-111563232" actor="0"/>
+  <node version="9999" lon="-92.34342125" lat="46.65988025" timestamp="2022-03-07T11:49:27Z" user="" id="-111558192" actor="0"/>
+  <node version="9999" lon="-92.34181668" lat="46.65968553" timestamp="2022-03-07T11:49:27Z" user="" id="-111556032" actor="0"/>
+  <node version="9999" lon="-92.34138786" lat="46.65973605" timestamp="2022-03-07T11:49:27Z" user="" id="-111556152" actor="0"/>
+  <node version="9999" lon="-92.34092387" lat="46.65991225" timestamp="2022-03-07T11:49:27Z" user="" id="-111556992" actor="0"/>
+  <node version="9999" lon="-92.34029513" lat="46.66018026" timestamp="2022-03-07T11:49:27Z" user="" id="-111555912" actor="0"/>
+  <node version="9999" lon="-92.33907254" lat="46.66022620" timestamp="2022-03-07T11:49:27Z" user="" id="-111557712" actor="0"/>
+  <node version="9999" lon="-92.33809696" lat="46.66037294" timestamp="2022-03-07T11:49:27Z" user="" id="-111556632" actor="0"/>
+  <node version="9999" lon="-92.33770319" lat="46.66031104" timestamp="2022-03-07T11:49:27Z" user="" id="-111556272" actor="0"/>
+  <node version="9999" lon="-92.33669648" lat="46.66001370" timestamp="2022-03-07T11:49:27Z" user="" id="-111556872" actor="0"/>
+  <node version="9999" lon="-92.33618968" lat="46.65975239" timestamp="2022-03-07T11:49:27Z" user="" id="-111557832" actor="0"/>
+  <node version="9999" lon="-92.33561080" lat="46.65909314" timestamp="2022-03-07T11:49:27Z" user="" id="-111556392" actor="0"/>
+  <node version="9999" lon="-92.33521874" lat="46.65889212" timestamp="2022-03-07T11:49:27Z" user="" id="-111556752" actor="0"/>
+  <node version="9999" lon="-92.33381927" lat="46.65861234" timestamp="2022-03-07T11:49:27Z" user="" id="-111558792" actor="0"/>
+  <node version="9999" lon="-92.33351065" lat="46.65867018" timestamp="2022-03-07T11:49:27Z" user="" id="-111555672" actor="0"/>
+  <node version="9999" lon="-92.33324932" lat="46.65879454" timestamp="2022-03-07T11:49:27Z" user="" id="-111558672" actor="0"/>
+  <node version="9999" lon="-92.33258902" lat="46.65928094" timestamp="2022-03-07T11:49:27Z" user="" id="-111558552" actor="0"/>
+  <node version="9999" lon="-92.33003149" lat="46.66067713" timestamp="2022-03-07T11:49:27Z" user="" id="-111558432" actor="0"/>
+  <node version="9999" lon="-92.32883096" lat="46.66130031" timestamp="2022-03-07T11:49:27Z" user="" id="-111557112" actor="0"/>
+  <node version="9999" lon="-92.32854772" lat="46.66154611" timestamp="2022-03-07T11:49:27Z" user="" id="-111556512" actor="0"/>
+  <node version="9999" lon="-92.32782206" lat="46.66241930" timestamp="2022-03-07T11:49:27Z" user="" id="-111555552" actor="0"/>
+  <node version="9999" lon="-92.32733950" lat="46.66312291" timestamp="2022-03-07T11:49:27Z" user="" id="-111557232" actor="0"/>
+  <node version="9999" lon="-92.32684991" lat="46.66373200" timestamp="2022-03-07T11:49:27Z" user="" id="-111558312" actor="0"/>
+  <node version="9999" lon="-92.32671088" lat="46.66394266" timestamp="2022-03-07T11:49:27Z" user="" id="-111557352" actor="0"/>
+  <node version="9999" lon="-92.32669092" lat="46.66416752" timestamp="2022-03-07T11:49:27Z" user="" id="-111557472" actor="0"/>
+  <node version="9999" lon="-92.32694888" lat="46.66451551" timestamp="2022-03-07T11:49:27Z" user="" id="-111558912" actor="0"/>
+  <node version="9999" lon="-92.32730303" lat="46.66481007" timestamp="2022-03-07T11:49:27Z" user="" id="-111557592" actor="0"/>
+  <node version="9999" lon="-92.32799017" lat="46.66526858" timestamp="2022-03-07T11:49:27Z" user="" id="-111557952" actor="0"/>
+  <node version="9999" lon="-92.32829721" lat="46.66554486" timestamp="2022-03-07T11:49:27Z" user="" id="-111558072" actor="0"/>
+  <node version="9999" lon="-92.32832670" lat="46.66567102" timestamp="2022-03-07T11:49:27Z" user="" id="-111559032" actor="0"/>
+  <node version="9999" lon="-92.32830196" lat="46.66583387" timestamp="2022-03-07T11:49:27Z" user="" id="-111555312" actor="0"/>
+  <node version="9999" lon="-92.32803140" lat="46.66592503" timestamp="2022-03-07T11:49:27Z" user="" id="-111555432" actor="0"/>
+  <node version="9999" lon="-92.32771460" lat="46.66586356" timestamp="2022-03-07T11:49:27Z" user="" id="-111555792" actor="0"/>
+  <node version="9999" lon="-92.32606472" lat="46.66531575" timestamp="2022-03-07T11:49:27Z" user="" id="-112737648" actor="0"/>
+  <node version="9999" lon="-92.32565017" lat="46.66527730" timestamp="2022-03-07T11:49:27Z" user="" id="-112737408" actor="0"/>
+  <node version="9999" lon="-92.32540218" lat="46.66531184" timestamp="2022-03-07T11:49:27Z" user="" id="-112735608" actor="0"/>
+  <node version="9999" lon="-92.32521649" lat="46.66539624" timestamp="2022-03-07T11:49:27Z" user="" id="-112736208" actor="0"/>
+  <node version="9999" lon="-92.32469966" lat="46.66576217" timestamp="2022-03-07T11:49:27Z" user="" id="-112735728" actor="0"/>
+  <node version="9999" lon="-92.32353040" lat="46.66688467" timestamp="2022-03-07T11:49:27Z" user="" id="-112736568" actor="0"/>
+  <node version="9999" lon="-92.32272171" lat="46.66746035" timestamp="2022-03-07T11:49:27Z" user="" id="-112737768" actor="0"/>
+  <node version="9999" lon="-92.32212472" lat="46.66783029" timestamp="2022-03-07T11:49:27Z" user="" id="-112734888" actor="0"/>
+  <node version="9999" lon="-92.31915969" lat="46.66887011" timestamp="2022-03-07T11:49:27Z" user="" id="-112735848" actor="0"/>
+  <node version="9999" lon="-92.31756221" lat="46.66942802" timestamp="2022-03-07T11:49:27Z" user="" id="-112737168" actor="0"/>
+  <node version="9999" lon="-92.31604516" lat="46.66990921" timestamp="2022-03-07T11:49:27Z" user="" id="-112736328" actor="0"/>
+  <node version="9999" lon="-92.31478427" lat="46.67016688" timestamp="2022-03-07T11:49:27Z" user="" id="-112736088" actor="0"/>
+  <node version="9999" lon="-92.31392002" lat="46.67027870" timestamp="2022-03-07T11:49:27Z" user="" id="-112734528" actor="0"/>
+  <node version="9999" lon="-92.31231429" lat="46.67029155" timestamp="2022-03-07T11:49:27Z" user="" id="-112734168" actor="0"/>
+  <node version="9999" lon="-92.31148649" lat="46.67010659" timestamp="2022-03-07T11:49:27Z" user="" id="-112736688" actor="0"/>
+  <node version="9999" lon="-92.31045657" lat="46.66962342" timestamp="2022-03-07T11:49:27Z" user="" id="-112736928" actor="0"/>
+  <node version="9999" lon="-92.30912369" lat="46.66861645" timestamp="2022-03-07T11:49:27Z" user="" id="-112735008" actor="0"/>
+  <node version="9999" lon="-92.30859834" lat="46.66848730" timestamp="2022-03-07T11:49:27Z" user="" id="-112736448" actor="0"/>
+  <node version="9999" lon="-92.30845545" lat="46.66849566" timestamp="2022-03-07T11:49:27Z" user="" id="-112737288" actor="0"/>
+  <node version="9999" lon="-92.30820666" lat="46.66851192" timestamp="2022-03-07T11:49:27Z" user="" id="-112735128" actor="0"/>
+  <node version="9999" lon="-92.30609164" lat="46.66886809" timestamp="2022-03-07T11:49:27Z" user="" id="-112737528" actor="0"/>
+  <node version="9999" lon="-92.30575667" lat="46.66886605" timestamp="2022-03-07T11:49:27Z" user="" id="-112737048" actor="0"/>
+  <node version="9999" lon="-92.30538960" lat="46.66881883" timestamp="2022-03-07T11:49:27Z" user="" id="-112735248" actor="0"/>
+  <node version="9999" lon="-92.30312237" lat="46.66830107" timestamp="2022-03-07T11:49:27Z" user="" id="-112738128" actor="0"/>
+  <node version="9999" lon="-92.30256420" lat="46.66824818" timestamp="2022-03-07T11:49:27Z" user="" id="-112737888" actor="0"/>
+  <node version="9999" lon="-92.30198064" lat="46.66826262" timestamp="2022-03-07T11:49:27Z" user="" id="-112738008" actor="0"/>
+  <node version="9999" lon="-92.30125204" lat="46.66830767" timestamp="2022-03-07T11:49:27Z" user="" id="-112732848" actor="0"/>
+  <node version="9999" lon="-92.30114901" lat="46.66831604" timestamp="2022-03-07T11:49:27Z" user="" id="-112732728" actor="0"/>
+  <node version="9999" lon="-92.30080407" lat="46.66839042" timestamp="2022-03-07T11:49:27Z" user="" id="-112732968" actor="0"/>
+  <node version="9999" lon="-92.30061833" lat="46.66853779" timestamp="2022-03-07T11:49:27Z" user="" id="-112733328" actor="0"/>
+  <node version="9999" lon="-92.30056361" lat="46.66891541" timestamp="2022-03-07T11:49:27Z" user="" id="-112731408" actor="0"/>
+  <node version="9999" lon="-92.30024065" lat="46.66956590" timestamp="2022-03-07T11:49:27Z" user="" id="-112732368" actor="0"/>
+  <node version="9999" lon="-92.29920970" lat="46.67100397" timestamp="2022-03-07T11:49:27Z" user="" id="-112733568" actor="0"/>
+  <node version="9999" lon="-92.29831406" lat="46.67246538" timestamp="2022-03-07T11:49:27Z" user="" id="-112732488" actor="0"/>
+  <node version="9999" lon="-92.29811871" lat="46.67265767" timestamp="2022-03-07T11:49:27Z" user="" id="-112732608" actor="0"/>
+  <node version="9999" lon="-92.29677933" lat="46.67344387" timestamp="2022-03-07T11:49:27Z" user="" id="-112731888" actor="0"/>
+  <node version="9999" lon="-92.29574240" lat="46.67378612" timestamp="2022-03-07T11:49:27Z" user="" id="-112733088" actor="0"/>
+  <node version="9999" lon="-92.29490324" lat="46.67390162" timestamp="2022-03-07T11:49:27Z" user="" id="-112730208" actor="0"/>
+  <node version="9999" lon="-92.29422146" lat="46.67389742" timestamp="2022-03-07T11:49:27Z" user="" id="-112730928" actor="0"/>
+  <node version="9999" lon="-92.29348231" lat="46.67381241" timestamp="2022-03-07T11:49:27Z" user="" id="-112730808" actor="0"/>
+  <node version="9999" lon="-92.29293864" lat="46.67367498" timestamp="2022-03-07T11:49:27Z" user="" id="-112731528" actor="0"/>
+  <node version="9999" lon="-92.29226366" lat="46.67318856" timestamp="2022-03-07T11:49:27Z" user="" id="-112732248" actor="0"/>
+  <node version="9999" lon="-92.29138405" lat="46.67271965" timestamp="2022-03-07T11:49:27Z" user="" id="-112731048" actor="0"/>
+  <node version="9999" lon="-92.29101184" lat="46.67250137" timestamp="2022-03-07T11:49:27Z" user="" id="-112731768" actor="0"/>
+  <node version="9999" lon="-92.29088915" lat="46.67219910" timestamp="2022-03-07T11:49:27Z" user="" id="-112733448" actor="0"/>
+  <node version="9999" lon="-92.29052104" lat="46.67183888" timestamp="2022-03-07T11:49:27Z" user="" id="-112731648" actor="0"/>
+  <node version="9999" lon="-92.29017740" lat="46.67164257" timestamp="2022-03-07T11:49:27Z" user="" id="-112731168" actor="0"/>
+  <node version="9999" lon="-92.28907673" lat="46.67148569" timestamp="2022-03-07T11:49:27Z" user="" id="-112730568" actor="0"/>
+  <node version="9999" lon="-92.28817819" lat="46.67155953" timestamp="2022-03-07T11:49:27Z" user="" id="-112731288" actor="0"/>
+  <node version="9999" lon="-92.28714982" lat="46.67175614" timestamp="2022-03-07T11:49:27Z" user="" id="-112733208" actor="0"/>
+  <node version="9999" lon="-92.28667486" lat="46.67179733" timestamp="2022-03-07T11:49:27Z" user="" id="-112730328" actor="0"/>
+  <node version="9999" lon="-92.28512476" lat="46.67169054" timestamp="2022-03-07T11:49:27Z" user="" id="-112732128" actor="0"/>
+  <node version="9999" lon="-92.28448452" lat="46.67162478" timestamp="2022-03-07T11:49:27Z" user="" id="-112733928" actor="0"/>
+  <node version="9999" lon="-92.28388140" lat="46.67140853" timestamp="2022-03-07T11:49:27Z" user="" id="-112733688" actor="0"/>
+  <node version="9999" lon="-92.28344723" lat="46.67112233" timestamp="2022-03-07T11:49:27Z" user="" id="-112732008" actor="0"/>
+  <node version="9999" lon="-92.28322389" lat="46.67064846" timestamp="2022-03-07T11:49:27Z" user="" id="-112733808" actor="0"/>
+  <node version="9999" lon="-92.28317803" lat="46.67009922" timestamp="2022-03-07T11:49:27Z" user="" id="-112730448" actor="0"/>
+  <node version="9999" lon="-92.28322067" lat="46.66903756" timestamp="2022-03-07T11:49:27Z" user="" id="-112730688" actor="0"/>
+  <node version="9999" lon="-92.28311295" lat="46.66878042" timestamp="2022-03-07T11:49:27Z" user="" id="-114607224" actor="0"/>
+  <node version="9999" lon="-92.28292516" lat="46.66858575" timestamp="2022-03-07T11:49:27Z" user="" id="-114605544" actor="0"/>
+  <node version="9999" lon="-92.28249024" lat="46.66829506" timestamp="2022-03-07T11:49:27Z" user="" id="-114611664" actor="0"/>
+  <node version="9999" lon="-92.28230352" lat="46.66801940" timestamp="2022-03-07T11:49:27Z" user="" id="-114612744" actor="0"/>
+  <node version="9999" lon="-92.28235787" lat="46.66767775" timestamp="2022-03-07T11:49:27Z" user="" id="-114610224" actor="0"/>
+  <node version="9999" lon="-92.28249819" lat="46.66738617" timestamp="2022-03-07T11:49:27Z" user="" id="-114609864" actor="0"/>
+  <node version="9999" lon="-92.28290069" lat="46.66679022" timestamp="2022-03-07T11:49:27Z" user="" id="-114611784" actor="0"/>
+  <node version="9999" lon="-92.28341945" lat="46.66636151" timestamp="2022-03-07T11:49:27Z" user="" id="-114611304" actor="0"/>
+  <node version="9999" lon="-92.28376619" lat="46.66615219" timestamp="2022-03-07T11:49:27Z" user="" id="-114612864" actor="0"/>
+  <node version="9999" lon="-92.28413251" lat="46.66575851" timestamp="2022-03-07T11:49:27Z" user="" id="-114612624" actor="0"/>
+  <node version="9999" lon="-92.28442942" lat="46.66523842" timestamp="2022-03-07T11:49:27Z" user="" id="-114611904" actor="0"/>
+  <node version="9999" lon="-92.28462830" lat="46.66434424" timestamp="2022-03-07T11:49:27Z" user="" id="-114610944" actor="0"/>
+  <node version="9999" lon="-92.28459708" lat="46.66386258" timestamp="2022-03-07T11:49:27Z" user="" id="-114612984" actor="0"/>
+  <node version="9999" lon="-92.28373925" lat="46.66268729" timestamp="2022-03-07T11:49:27Z" user="" id="-114609984" actor="0"/>
+  <node version="9999" lon="-92.28341604" lat="46.66241529" timestamp="2022-03-07T11:49:27Z" user="" id="-114610104" actor="0"/>
+  <node version="9999" lon="-92.28125650" lat="46.66126782" timestamp="2022-03-07T11:49:27Z" user="" id="-114612024" actor="0"/>
+  <node version="9999" lon="-92.28085125" lat="46.66114830" timestamp="2022-03-07T11:49:27Z" user="" id="-114610344" actor="0"/>
+  <node version="9999" lon="-92.27998352" lat="46.66097184" timestamp="2022-03-07T11:49:27Z" user="" id="-114612144" actor="0"/>
+  <node version="9999" lon="-92.27950154" lat="46.66072583" timestamp="2022-03-07T11:49:27Z" user="" id="-114610824" actor="0"/>
+  <way version="9999" timestamp="2022-03-07T11:49:27Z" user="" id="-97345512" actor="0">
+    <nd ref="-112343096"/>
+    <nd ref="-112333616"/>
+    <nd ref="-112333736"/>
+    <nd ref="-112333856"/>
+    <nd ref="-112333976"/>
+    <nd ref="-112336016"/>
+    <nd ref="-112334456"/>
+    <nd ref="-112334936"/>
+    <nd ref="-112335296"/>
+    <nd ref="-112334096"/>
+    <nd ref="-112334216"/>
+    <nd ref="-112334816"/>
+    <nd ref="-112334336"/>
+    <nd ref="-112333136"/>
+    <nd ref="-112334696"/>
+    <nd ref="-112335416"/>
+    <nd ref="-112336376"/>
+    <nd ref="-112333256"/>
+    <nd ref="-112333496"/>
+    <nd ref="-112336496"/>
+    <nd ref="-112335056"/>
+    <nd ref="-112335536"/>
+    <nd ref="-112334576"/>
+    <nd ref="-112335896"/>
+    <nd ref="-112336256"/>
+    <nd ref="-112335656"/>
+    <nd ref="-112335776"/>
+    <nd ref="-112336136"/>
+    <nd ref="-112336616"/>
+    <nd ref="-112335176"/>
+    <nd ref="-112332896"/>
+    <nd ref="-112333016"/>
+    <nd ref="-112333376"/>
+    <nd ref="-112337216"/>
+    <nd ref="-112337936"/>
+    <nd ref="-112336976"/>
+    <nd ref="-112337456"/>
+    <nd ref="-112338296"/>
+    <nd ref="-112339136"/>
+    <nd ref="-112337696"/>
+    <nd ref="-112339856"/>
+    <nd ref="-112339256"/>
+    <nd ref="-112340456"/>
+    <nd ref="-112337816"/>
+    <nd ref="-112339376"/>
+    <nd ref="-112339976"/>
+    <nd ref="-112340096"/>
+    <nd ref="-112339496"/>
+    <nd ref="-112338536"/>
+    <nd ref="-112339616"/>
+    <nd ref="-112338776"/>
+    <nd ref="-112340216"/>
+    <nd ref="-112340336"/>
+    <nd ref="-112339736"/>
+    <nd ref="-112336736"/>
+    <nd ref="-112336856"/>
+    <nd ref="-112337576"/>
+    <nd ref="-112337096"/>
+    <nd ref="-112338416"/>
+    <nd ref="-112338056"/>
+    <nd ref="-112337336"/>
+    <nd ref="-112338176"/>
+    <nd ref="-112338656"/>
+    <nd ref="-112338896"/>
+    <nd ref="-112339016"/>
+    <nd ref="-111559512"/>
+    <nd ref="-111561912"/>
+    <nd ref="-111560712"/>
+    <nd ref="-111559632"/>
+    <nd ref="-111561312"/>
+    <nd ref="-111559272"/>
+    <nd ref="-111561552"/>
+    <nd ref="-111560832"/>
+    <nd ref="-111562512"/>
+    <nd ref="-111562272"/>
+    <nd ref="-111562032"/>
+    <nd ref="-111560952"/>
+    <nd ref="-111562632"/>
+    <nd ref="-111562152"/>
+    <nd ref="-111561792"/>
+    <nd ref="-111561072"/>
+    <nd ref="-111561192"/>
+    <nd ref="-111562392"/>
+    <nd ref="-111559872"/>
+    <nd ref="-111559392"/>
+    <nd ref="-111561432"/>
+    <nd ref="-111561672"/>
+    <nd ref="-111559992"/>
+    <nd ref="-111562752"/>
+    <nd ref="-111562872"/>
+    <nd ref="-111559152"/>
+    <nd ref="-111559752"/>
+    <nd ref="-111560112"/>
+    <nd ref="-111560352"/>
+    <nd ref="-111560232"/>
+    <nd ref="-111560472"/>
+    <nd ref="-111560592"/>
+    <nd ref="-111563232"/>
+    <nd ref="-111558192"/>
+    <nd ref="-111556032"/>
+    <nd ref="-111556152"/>
+    <nd ref="-111556992"/>
+    <nd ref="-111555912"/>
+    <nd ref="-111557712"/>
+    <nd ref="-111556632"/>
+    <nd ref="-111556272"/>
+    <nd ref="-111556872"/>
+    <nd ref="-111557832"/>
+    <nd ref="-111556392"/>
+    <nd ref="-111556752"/>
+    <nd ref="-111558792"/>
+    <nd ref="-111555672"/>
+    <nd ref="-111558672"/>
+    <nd ref="-111558552"/>
+    <nd ref="-111558432"/>
+    <nd ref="-111557112"/>
+    <nd ref="-111556512"/>
+    <nd ref="-111555552"/>
+    <nd ref="-111557232"/>
+    <nd ref="-111558312"/>
+    <nd ref="-111557352"/>
+    <nd ref="-111557472"/>
+    <nd ref="-111558912"/>
+    <nd ref="-111557592"/>
+    <nd ref="-111557952"/>
+    <nd ref="-111558072"/>
+    <nd ref="-111559032"/>
+    <nd ref="-111555312"/>
+    <nd ref="-111555432"/>
+    <nd ref="-111555792"/>
+    <nd ref="-112737648"/>
+    <nd ref="-112737408"/>
+    <nd ref="-112735608"/>
+    <nd ref="-112736208"/>
+    <nd ref="-112735728"/>
+    <nd ref="-112736568"/>
+    <nd ref="-112737768"/>
+    <nd ref="-112734888"/>
+    <nd ref="-112735848"/>
+    <nd ref="-112737168"/>
+    <nd ref="-112736328"/>
+    <nd ref="-112736088"/>
+    <nd ref="-112734528"/>
+    <nd ref="-112734168"/>
+    <nd ref="-112736688"/>
+    <nd ref="-112736928"/>
+    <nd ref="-112735008"/>
+    <nd ref="-112736448"/>
+    <nd ref="-112737288"/>
+    <nd ref="-112735128"/>
+    <nd ref="-112737528"/>
+    <nd ref="-112737048"/>
+    <nd ref="-112735248"/>
+    <nd ref="-112738128"/>
+    <nd ref="-112737888"/>
+    <nd ref="-112738008"/>
+    <nd ref="-112732848"/>
+    <nd ref="-112732728"/>
+    <nd ref="-112732968"/>
+    <nd ref="-112733328"/>
+    <nd ref="-112731408"/>
+    <nd ref="-112732368"/>
+    <nd ref="-112733568"/>
+    <nd ref="-112732488"/>
+    <nd ref="-112732608"/>
+    <nd ref="-112731888"/>
+    <nd ref="-112733088"/>
+    <nd ref="-112730208"/>
+    <nd ref="-112730928"/>
+    <nd ref="-112730808"/>
+    <nd ref="-112731528"/>
+    <nd ref="-112732248"/>
+    <nd ref="-112731048"/>
+    <nd ref="-112731768"/>
+    <nd ref="-112733448"/>
+    <nd ref="-112731648"/>
+    <nd ref="-112731168"/>
+    <nd ref="-112730568"/>
+    <nd ref="-112731288"/>
+    <nd ref="-112733208"/>
+    <nd ref="-112730328"/>
+    <nd ref="-112732128"/>
+    <nd ref="-112733928"/>
+    <nd ref="-112733688"/>
+    <nd ref="-112732008"/>
+    <nd ref="-112733808"/>
+    <nd ref="-112730448"/>
+    <nd ref="-112730688"/>
+    <nd ref="-114607224"/>
+    <nd ref="-114605544"/>
+    <nd ref="-114611664"/>
+    <nd ref="-114612744"/>
+    <nd ref="-114610224"/>
+    <nd ref="-114609864"/>
+    <nd ref="-114611784"/>
+    <nd ref="-114611304"/>
+    <nd ref="-114612864"/>
+    <nd ref="-114612624"/>
+    <nd ref="-114611904"/>
+    <nd ref="-114610944"/>
+    <nd ref="-114612984"/>
+    <nd ref="-114609984"/>
+    <nd ref="-114610104"/>
+    <nd ref="-114612024"/>
+    <nd ref="-114610344"/>
+    <nd ref="-114612144"/>
+    <nd ref="-114610824"/>
+    <tag k="DELETE" v="1"/>
+    <tag k="sort" v="0300000000000210-I"/>
+    <tag k="from_tm" v="218.62500000000"/>
+    <tag k="to_tm" v="227.85500000000"/>
+    <tag k="sll_zone" v="NORTH-CENTRAL"/>
+    <tag k="name" v="MN 210 (7 ton)"/>
+    <tag k="from_rp" v="218+00.558"/>
+    <tag k="to_rp" v="227+000.790"/>
+    <tag k="description" v="MN 210 from MN 45 (Carlton) to west MN 23 (Duluth)"/>
+    <tag k="posting_ton" v="7"/>
+    <tag k="length_m" v="14853.70816620000"/>
+  </way>
+  <node version="9999" lon="-92.87985030" lat="46.12516633" timestamp="2022-03-07T11:49:27Z" user="" id="-114610464" actor="0"/>
+  <node version="9999" lon="-92.87554807" lat="46.12446873" timestamp="2022-03-07T11:49:27Z" user="" id="-114611064" actor="0"/>
+  <node version="9999" lon="-92.87277237" lat="46.12417317" timestamp="2022-03-07T11:49:27Z" user="" id="-114610584" actor="0"/>
+  <node version="9999" lon="-92.87245649" lat="46.12415932" timestamp="2022-03-07T11:49:27Z" user="" id="-114610704" actor="0"/>
+  <node version="9999" lon="-92.87218826" lat="46.12418151" timestamp="2022-03-07T11:49:27Z" user="" id="-114609504" actor="0"/>
+  <node version="9999" lon="-92.87203777" lat="46.12419485" timestamp="2022-03-07T11:49:27Z" user="" id="-114611184" actor="0"/>
+  <node version="9999" lon="-92.87183177" lat="46.12424411" timestamp="2022-03-07T11:49:27Z" user="" id="-114612264" actor="0"/>
+  <node version="9999" lon="-92.87142001" lat="46.12441916" timestamp="2022-03-07T11:49:27Z" user="" id="-114609264" actor="0"/>
+  <node version="9999" lon="-92.87104351" lat="46.12465491" timestamp="2022-03-07T11:49:27Z" user="" id="-114611424" actor="0"/>
+  <node version="9999" lon="-92.87097525" lat="46.12469766" timestamp="2022-03-07T11:49:27Z" user="" id="-114609384" actor="0"/>
+  <node version="9999" lon="-92.87081591" lat="46.12485049" timestamp="2022-03-07T11:49:27Z" user="" id="-114611544" actor="0"/>
+  <node version="9999" lon="-92.87024804" lat="46.12570036" timestamp="2022-03-07T11:49:27Z" user="" id="-114612384" actor="0"/>
+  <node version="9999" lon="-92.87021675" lat="46.12576330" timestamp="2022-03-07T11:49:27Z" user="" id="-114609744" actor="0"/>
+  <node version="9999" lon="-92.86989600" lat="46.12643463" timestamp="2022-03-07T11:49:27Z" user="" id="-114612504" actor="0"/>
+  <node version="9999" lon="-92.86974398" lat="46.12675279" timestamp="2022-03-07T11:49:27Z" user="" id="-99380280" actor="0"/>
+  <node version="9999" lon="-92.86928838" lat="46.12769218" timestamp="2022-03-07T11:49:27Z" user="" id="-99378840" actor="0"/>
+  <node version="9999" lon="-92.86928336" lat="46.12773329" timestamp="2022-03-07T11:49:27Z" user="" id="-99378960" actor="0"/>
+  <node version="9999" lon="-92.86919894" lat="46.12852609" timestamp="2022-03-07T11:49:27Z" user="" id="-99380400" actor="0"/>
+  <node version="9999" lon="-92.86913682" lat="46.12897513" timestamp="2022-03-07T11:49:27Z" user="" id="-99379800" actor="0"/>
+  <node version="9999" lon="-92.86900041" lat="46.12952399" timestamp="2022-03-07T11:49:27Z" user="" id="-99378360" actor="0"/>
+  <node version="9999" lon="-92.86895848" lat="46.12963645" timestamp="2022-03-07T11:49:27Z" user="" id="-99379320" actor="0"/>
+  <node version="9999" lon="-92.86870351" lat="46.13002316" timestamp="2022-03-07T11:49:27Z" user="" id="-99380760" actor="0"/>
+  <node version="9999" lon="-92.86843873" lat="46.13037169" timestamp="2022-03-07T11:49:27Z" user="" id="-99379080" actor="0"/>
+  <node version="9999" lon="-92.86765278" lat="46.13127747" timestamp="2022-03-07T11:49:27Z" user="" id="-99378720" actor="0"/>
+  <node version="9999" lon="-92.86635670" lat="46.13075847" timestamp="2022-03-07T11:49:27Z" user="" id="-99380880" actor="0"/>
+  <node version="9999" lon="-92.86500243" lat="46.13021685" timestamp="2022-03-07T11:49:27Z" user="" id="-99381000" actor="0"/>
+  <node version="9999" lon="-92.86442088" lat="46.12998215" timestamp="2022-03-07T11:49:27Z" user="" id="-99379200" actor="0"/>
+  <node version="9999" lon="-92.86377186" lat="46.12972039" timestamp="2022-03-07T11:49:27Z" user="" id="-99381240" actor="0"/>
+  <node version="9999" lon="-92.86321862" lat="46.12949922" timestamp="2022-03-07T11:49:27Z" user="" id="-99379440" actor="0"/>
+  <node version="9999" lon="-92.86309373" lat="46.12945857" timestamp="2022-03-07T11:49:27Z" user="" id="-99381360" actor="0"/>
+  <node version="9999" lon="-92.86252137" lat="46.12927337" timestamp="2022-03-07T11:49:27Z" user="" id="-99379680" actor="0"/>
+  <node version="9999" lon="-92.86168872" lat="46.12916438" timestamp="2022-03-07T11:49:27Z" user="" id="-99381600" actor="0"/>
+  <node version="9999" lon="-92.86131743" lat="46.12915043" timestamp="2022-03-07T11:49:27Z" user="" id="-75173816" actor="0"/>
+  <node version="9999" lon="-92.86095299" lat="46.12913649" timestamp="2022-03-07T11:49:27Z" user="" id="-75170696" actor="0"/>
+  <node version="9999" lon="-92.85709911" lat="46.12898773" timestamp="2022-03-07T11:49:27Z" user="" id="-75171656" actor="0"/>
+  <node version="9999" lon="-92.85662144" lat="46.12896836" timestamp="2022-03-07T11:49:27Z" user="" id="-113753048" actor="0"/>
+  <node version="9999" lon="-92.85606809" lat="46.12894593" timestamp="2022-03-07T11:49:27Z" user="" id="-113751608" actor="0"/>
+  <node version="9999" lon="-92.85058732" lat="46.12877690" timestamp="2022-03-07T11:49:27Z" user="" id="-113750168" actor="0"/>
+  <node version="9999" lon="-92.84541522" lat="46.12875651" timestamp="2022-03-07T11:49:27Z" user="" id="-113751128" actor="0"/>
+  <node version="9999" lon="-92.82458646" lat="46.12866796" timestamp="2022-03-07T11:49:27Z" user="" id="-113752088" actor="0"/>
+  <node version="9999" lon="-92.81438670" lat="46.12875535" timestamp="2022-03-07T11:49:27Z" user="" id="-113750648" actor="0"/>
+  <node version="9999" lon="-92.80397158" lat="46.12863447" timestamp="2022-03-07T11:49:27Z" user="" id="-113752448" actor="0"/>
+  <node version="9999" lon="-92.80378729" lat="46.15034695" timestamp="2022-03-07T11:49:27Z" user="" id="-113750408" actor="0"/>
+  <node version="9999" lon="-92.80372403" lat="46.15778092" timestamp="2022-03-07T11:49:27Z" user="" id="-113751248" actor="0"/>
+  <node version="9999" lon="-92.80369040" lat="46.17224401" timestamp="2022-03-07T11:49:27Z" user="" id="-113751368" actor="0"/>
+  <node version="9999" lon="-92.80365759" lat="46.18635155" timestamp="2022-03-07T11:49:27Z" user="" id="-113751728" actor="0"/>
+  <node version="9999" lon="-92.80365690" lat="46.18677455" timestamp="2022-03-07T11:49:27Z" user="" id="-113752208" actor="0"/>
+  <way version="9999" timestamp="2022-03-07T11:49:27Z" user="" id="-97345728" actor="0">
+    <nd ref="-114610464"/>
+    <nd ref="-114611064"/>
+    <nd ref="-114610584"/>
+    <nd ref="-114610704"/>
+    <nd ref="-114609504"/>
+    <nd ref="-114611184"/>
+    <nd ref="-114612264"/>
+    <nd ref="-114609264"/>
+    <nd ref="-114611424"/>
+    <nd ref="-114609384"/>
+    <nd ref="-114611544"/>
+    <nd ref="-114612384"/>
+    <nd ref="-114609744"/>
+    <nd ref="-114612504"/>
+    <nd ref="-99380280"/>
+    <nd ref="-99378840"/>
+    <nd ref="-99378960"/>
+    <nd ref="-99380400"/>
+    <nd ref="-99379800"/>
+    <nd ref="-99378360"/>
+    <nd ref="-99379320"/>
+    <nd ref="-99380760"/>
+    <nd ref="-99379080"/>
+    <nd ref="-99378720"/>
+    <nd ref="-99380880"/>
+    <nd ref="-99381000"/>
+    <nd ref="-99379200"/>
+    <nd ref="-99381240"/>
+    <nd ref="-99379440"/>
+    <nd ref="-99381360"/>
+    <nd ref="-99379680"/>
+    <nd ref="-99381600"/>
+    <nd ref="-75173816"/>
+    <nd ref="-75170696"/>
+    <nd ref="-75171656"/>
+    <nd ref="-113753048"/>
+    <nd ref="-113751608"/>
+    <nd ref="-113750168"/>
+    <nd ref="-113751128"/>
+    <nd ref="-113752088"/>
+    <nd ref="-113750648"/>
+    <nd ref="-113752448"/>
+    <nd ref="-113750408"/>
+    <nd ref="-113751248"/>
+    <nd ref="-113751368"/>
+    <nd ref="-113751728"/>
+    <nd ref="-113752208"/>
+    <tag k="DELETE" v="16"/>
+    <tag k="sort" v="0300000000000123-I"/>
+    <tag k="from_tm" v="0.00000000000"/>
+    <tag k="to_tm" v="8.04100000000"/>
+    <tag k="sll_zone" v="NORTH-CENTRAL"/>
+    <tag k="name" v="MN 123 (7 ton)"/>
+    <tag k="from_rp" v="0+00.000"/>
+    <tag k="to_rp" v="8+00.054"/>
+    <tag k="description" v="MN 123 from south Jct. MN 23 (Sandstone) to north Jct. MN 23 (Askov)"/>
+    <tag k="posting_ton" v="7"/>
+    <tag k="length_m" v="12941.01403050000"/>
+  </way>
+  <node version="9999" lon="-95.01052825" lat="46.84090378" timestamp="2022-03-07T11:49:27Z" user="" id="-113752328" actor="0"/>
+  <node version="9999" lon="-95.00914362" lat="46.84091009" timestamp="2022-03-07T11:49:27Z" user="" id="-113752688" actor="0"/>
+  <node version="9999" lon="-95.00844778" lat="46.84091332" timestamp="2022-03-07T11:49:27Z" user="" id="-113753168" actor="0"/>
+  <node version="9999" lon="-95.00790239" lat="46.84094123" timestamp="2022-03-07T11:49:27Z" user="" id="-113751968" actor="0"/>
+  <node version="9999" lon="-95.00770425" lat="46.84099836" timestamp="2022-03-07T11:49:27Z" user="" id="-113750768" actor="0"/>
+  <node version="9999" lon="-95.00710337" lat="46.84137983" timestamp="2022-03-07T11:49:27Z" user="" id="-113750888" actor="0"/>
+  <node version="9999" lon="-95.00692430" lat="46.84149351" timestamp="2022-03-07T11:49:27Z" user="" id="-113752808" actor="0"/>
+  <node version="9999" lon="-95.00683766" lat="46.84152203" timestamp="2022-03-07T11:49:27Z" user="" id="-113752928" actor="0"/>
+  <node version="9999" lon="-95.00672482" lat="46.84155100" timestamp="2022-03-07T11:49:27Z" user="" id="-113750528" actor="0"/>
+  <node version="9999" lon="-94.99809631" lat="46.84163488" timestamp="2022-03-07T11:49:27Z" user="" id="-113750048" actor="0"/>
+  <node version="9999" lon="-94.99766360" lat="46.84167807" timestamp="2022-03-07T11:49:27Z" user="" id="-113749688" actor="0"/>
+  <node version="9999" lon="-94.99727257" lat="46.84176590" timestamp="2022-03-07T11:49:27Z" user="" id="-113751488" actor="0"/>
+  <node version="9999" lon="-94.99696129" lat="46.84191532" timestamp="2022-03-07T11:49:27Z" user="" id="-113751848" actor="0"/>
+  <node version="9999" lon="-94.99673792" lat="46.84205871" timestamp="2022-03-07T11:49:27Z" user="" id="-113753288" actor="0"/>
+  <node version="9999" lon="-94.99649068" lat="46.84228800" timestamp="2022-03-07T11:49:27Z" user="" id="-113749568" actor="0"/>
+  <node version="9999" lon="-94.99629159" lat="46.84255695" timestamp="2022-03-07T11:49:27Z" user="" id="-113749808" actor="0"/>
+  <node version="9999" lon="-94.99621697" lat="46.84285523" timestamp="2022-03-07T11:49:27Z" user="" id="-113750288" actor="0"/>
+  <node version="9999" lon="-94.99625160" lat="46.84790326" timestamp="2022-03-07T11:49:27Z" user="" id="-113749928" actor="0"/>
+  <node version="9999" lon="-94.99616334" lat="46.84812079" timestamp="2022-03-07T11:49:27Z" user="" id="-113751008" actor="0"/>
+  <node version="9999" lon="-94.99611538" lat="46.84824312" timestamp="2022-03-07T11:49:27Z" user="" id="-113756288" actor="0"/>
+  <node version="9999" lon="-94.99596369" lat="46.84843025" timestamp="2022-03-07T11:49:27Z" user="" id="-113753408" actor="0"/>
+  <node version="9999" lon="-94.99573254" lat="46.84861874" timestamp="2022-03-07T11:49:27Z" user="" id="-113755208" actor="0"/>
+  <node version="9999" lon="-94.99536533" lat="46.84880966" timestamp="2022-03-07T11:49:27Z" user="" id="-113754008" actor="0"/>
+  <node version="9999" lon="-94.99504608" lat="46.84890971" timestamp="2022-03-07T11:49:27Z" user="" id="-113755328" actor="0"/>
+  <node version="9999" lon="-94.99447125" lat="46.84892875" timestamp="2022-03-07T11:49:27Z" user="" id="-113755448" actor="0"/>
+  <node version="9999" lon="-94.99363011" lat="46.84896245" timestamp="2022-03-07T11:49:27Z" user="" id="-113754128" actor="0"/>
+  <node version="9999" lon="-94.97547257" lat="46.84879640" timestamp="2022-03-07T11:49:27Z" user="" id="-113754968" actor="0"/>
+  <node version="9999" lon="-94.95372943" lat="46.84898817" timestamp="2022-03-07T11:49:27Z" user="" id="-113756528" actor="0"/>
+  <node version="9999" lon="-94.93269202" lat="46.84875599" timestamp="2022-03-07T11:49:27Z" user="" id="-113754608" actor="0"/>
+  <node version="9999" lon="-94.91143088" lat="46.84851918" timestamp="2022-03-07T11:49:27Z" user="" id="-113754248" actor="0"/>
+  <node version="9999" lon="-94.89376415" lat="46.84816046" timestamp="2022-03-07T11:49:27Z" user="" id="-113756648" actor="0"/>
+  <node version="9999" lon="-94.88331039" lat="46.84801803" timestamp="2022-03-07T11:49:27Z" user="" id="-113755808" actor="0"/>
+  <node version="9999" lon="-94.87830117" lat="46.84795186" timestamp="2022-03-07T11:49:27Z" user="" id="-113755568" actor="0"/>
+  <node version="9999" lon="-94.87801438" lat="46.84786208" timestamp="2022-03-07T11:49:27Z" user="" id="-113757128" actor="0"/>
+  <node version="9999" lon="-94.87786263" lat="46.84776558" timestamp="2022-03-07T11:49:27Z" user="" id="-113757008" actor="0"/>
+  <node version="9999" lon="-94.87717642" lat="46.84712888" timestamp="2022-03-07T11:49:27Z" user="" id="-113754368" actor="0"/>
+  <node version="9999" lon="-94.87680891" lat="46.84690994" timestamp="2022-03-07T11:49:27Z" user="" id="-113753768" actor="0"/>
+  <node version="9999" lon="-94.87667189" lat="46.84687167" timestamp="2022-03-07T11:49:27Z" user="" id="-113754488" actor="0"/>
+  <node version="9999" lon="-94.87612254" lat="46.84672771" timestamp="2022-03-07T11:49:27Z" user="" id="-113754728" actor="0"/>
+  <node version="9999" lon="-94.87531315" lat="46.84657897" timestamp="2022-03-07T11:49:27Z" user="" id="-113755928" actor="0"/>
+  <node version="9999" lon="-94.87515885" lat="46.84659419" timestamp="2022-03-07T11:49:27Z" user="" id="-113753528" actor="0"/>
+  <node version="9999" lon="-94.87443737" lat="46.84666533" timestamp="2022-03-07T11:49:27Z" user="" id="-113754848" actor="0"/>
+  <node version="9999" lon="-94.87391423" lat="46.84682688" timestamp="2022-03-07T11:49:27Z" user="" id="-113753648" actor="0"/>
+  <node version="9999" lon="-94.87284298" lat="46.84752837" timestamp="2022-03-07T11:49:27Z" user="" id="-113755088" actor="0"/>
+  <node version="9999" lon="-94.87264913" lat="46.84763504" timestamp="2022-03-07T11:49:27Z" user="" id="-113755688" actor="0"/>
+  <node version="9999" lon="-94.87125643" lat="46.84841826" timestamp="2022-03-07T11:49:27Z" user="" id="-113753888" actor="0"/>
+  <node version="9999" lon="-94.86590028" lat="46.85054855" timestamp="2022-03-07T11:49:27Z" user="" id="-113756048" actor="0"/>
+  <node version="9999" lon="-94.86249837" lat="46.85180539" timestamp="2022-03-07T11:49:27Z" user="" id="-113756168" actor="0"/>
+  <node version="9999" lon="-94.86202331" lat="46.85194811" timestamp="2022-03-07T11:49:27Z" user="" id="-113756408" actor="0"/>
+  <node version="9999" lon="-94.86154207" lat="46.85203245" timestamp="2022-03-07T11:49:27Z" user="" id="-113756768" actor="0"/>
+  <node version="9999" lon="-94.85756577" lat="46.85252002" timestamp="2022-03-07T11:49:27Z" user="" id="-113756888" actor="0"/>
+  <node version="9999" lon="-94.85659449" lat="46.85269328" timestamp="2022-03-07T11:49:27Z" user="" id="-113757368" actor="0"/>
+  <node version="9999" lon="-94.85610309" lat="46.85286323" timestamp="2022-03-07T11:49:27Z" user="" id="-113757848" actor="0"/>
+  <node version="9999" lon="-94.85405038" lat="46.85382344" timestamp="2022-03-07T11:49:27Z" user="" id="-113757488" actor="0"/>
+  <node version="9999" lon="-94.85240379" lat="46.85450704" timestamp="2022-03-07T11:49:27Z" user="" id="-113758088" actor="0"/>
+  <node version="9999" lon="-94.85093086" lat="46.85494934" timestamp="2022-03-07T11:49:27Z" user="" id="-113757968" actor="0"/>
+  <node version="9999" lon="-94.85035764" lat="46.85518360" timestamp="2022-03-07T11:49:27Z" user="" id="-113757728" actor="0"/>
+  <node version="9999" lon="-94.84980712" lat="46.85548498" timestamp="2022-03-07T11:49:27Z" user="" id="-113757248" actor="0"/>
+  <node version="9999" lon="-94.84873617" lat="46.85617274" timestamp="2022-03-07T11:49:27Z" user="" id="-113757608" actor="0"/>
+  <node version="9999" lon="-94.84801630" lat="46.85653083" timestamp="2022-03-07T11:49:27Z" user="" id="-113744288" actor="0"/>
+  <node version="9999" lon="-94.84734117" lat="46.85667672" timestamp="2022-03-07T11:49:27Z" user="" id="-113743448" actor="0"/>
+  <node version="9999" lon="-94.84582717" lat="46.85693964" timestamp="2022-03-07T11:49:27Z" user="" id="-113742128" actor="0"/>
+  <node version="9999" lon="-94.84459624" lat="46.85698429" timestamp="2022-03-07T11:49:27Z" user="" id="-113743208" actor="0"/>
+  <node version="9999" lon="-94.84322824" lat="46.85741282" timestamp="2022-03-07T11:49:27Z" user="" id="-113742008" actor="0"/>
+  <node version="9999" lon="-94.84219027" lat="46.85786614" timestamp="2022-03-07T11:49:27Z" user="" id="-113743568" actor="0"/>
+  <node version="9999" lon="-94.84134725" lat="46.85831221" timestamp="2022-03-07T11:49:27Z" user="" id="-113744648" actor="0"/>
+  <node version="9999" lon="-94.84049183" lat="46.85890217" timestamp="2022-03-07T11:49:27Z" user="" id="-113744768" actor="0"/>
+  <node version="9999" lon="-94.83978801" lat="46.85950064" timestamp="2022-03-07T11:49:27Z" user="" id="-113743328" actor="0"/>
+  <node version="9999" lon="-94.83932996" lat="46.85980565" timestamp="2022-03-07T11:49:27Z" user="" id="-113745008" actor="0"/>
+  <node version="9999" lon="-94.83881234" lat="46.86003117" timestamp="2022-03-07T11:49:27Z" user="" id="-113742608" actor="0"/>
+  <node version="9999" lon="-94.83821892" lat="46.86014435" timestamp="2022-03-07T11:49:27Z" user="" id="-113742368" actor="0"/>
+  <node version="9999" lon="-94.83766411" lat="46.86012365" timestamp="2022-03-07T11:49:27Z" user="" id="-113744048" actor="0"/>
+  <node version="9999" lon="-94.83713986" lat="46.85994449" timestamp="2022-03-07T11:49:27Z" user="" id="-113744408" actor="0"/>
+  <node version="9999" lon="-94.83648193" lat="46.85943183" timestamp="2022-03-07T11:49:27Z" user="" id="-113744888" actor="0"/>
+  <node version="9999" lon="-94.83520337" lat="46.85844536" timestamp="2022-03-07T11:49:27Z" user="" id="-113745128" actor="0"/>
+  <node version="9999" lon="-94.83408296" lat="46.85766367" timestamp="2022-03-07T11:49:27Z" user="" id="-113743088" actor="0"/>
+  <node version="9999" lon="-94.83352094" lat="46.85743081" timestamp="2022-03-07T11:49:27Z" user="" id="-113744168" actor="0"/>
+  <node version="9999" lon="-94.83268064" lat="46.85726656" timestamp="2022-03-07T11:49:27Z" user="" id="-113745248" actor="0"/>
+  <node version="9999" lon="-94.83085973" lat="46.85704397" timestamp="2022-03-07T11:49:27Z" user="" id="-113744528" actor="0"/>
+  <node version="9999" lon="-94.82971002" lat="46.85687972" timestamp="2022-03-07T11:49:27Z" user="" id="-113745368" actor="0"/>
+  <node version="9999" lon="-94.82760463" lat="46.85675541" timestamp="2022-03-07T11:49:27Z" user="" id="-113745488" actor="0"/>
+  <node version="9999" lon="-94.82227916" lat="46.85652443" timestamp="2022-03-07T11:49:27Z" user="" id="-113745608" actor="0"/>
+  <node version="9999" lon="-94.81822499" lat="46.85648584" timestamp="2022-03-07T11:49:27Z" user="" id="-113743928" actor="0"/>
+  <node version="9999" lon="-94.81476649" lat="46.85888532" timestamp="2022-03-07T11:49:27Z" user="" id="-113742248" actor="0"/>
+  <node version="9999" lon="-94.81021620" lat="46.86184088" timestamp="2022-03-07T11:49:27Z" user="" id="-113741888" actor="0"/>
+  <node version="9999" lon="-94.80965469" lat="46.86209698" timestamp="2022-03-07T11:49:27Z" user="" id="-113742488" actor="0"/>
+  <node version="9999" lon="-94.80909642" lat="46.86227011" timestamp="2022-03-07T11:49:27Z" user="" id="-113742728" actor="0"/>
+  <node version="9999" lon="-94.80825048" lat="46.86233492" timestamp="2022-03-07T11:49:27Z" user="" id="-113742848" actor="0"/>
+  <node version="9999" lon="-94.78776250" lat="46.86237462" timestamp="2022-03-07T11:49:27Z" user="" id="-113742968" actor="0"/>
+  <node version="9999" lon="-94.76627345" lat="46.86229435" timestamp="2022-03-07T11:49:27Z" user="" id="-113743688" actor="0"/>
+  <node version="9999" lon="-94.76616075" lat="46.86229609" timestamp="2022-03-07T11:49:27Z" user="" id="-113743808" actor="0"/>
+  <node version="9999" lon="-94.76077756" lat="46.86233855" timestamp="2022-03-07T11:49:27Z" user="" id="-113746808" actor="0"/>
+  <node version="9999" lon="-94.75752240" lat="46.86236160" timestamp="2022-03-07T11:49:27Z" user="" id="-113748128" actor="0"/>
+  <node version="9999" lon="-94.75614532" lat="46.86249071" timestamp="2022-03-07T11:49:27Z" user="" id="-113749448" actor="0"/>
+  <node version="9999" lon="-94.75471353" lat="46.86284116" timestamp="2022-03-07T11:49:27Z" user="" id="-113748248" actor="0"/>
+  <node version="9999" lon="-94.75030692" lat="46.86298513" timestamp="2022-03-07T11:49:27Z" user="" id="-113748368" actor="0"/>
+  <node version="9999" lon="-94.74777887" lat="46.86298778" timestamp="2022-03-07T11:49:27Z" user="" id="-113748488" actor="0"/>
+  <node version="9999" lon="-94.74679458" lat="46.86290380" timestamp="2022-03-07T11:49:27Z" user="" id="-113747168" actor="0"/>
+  <node version="9999" lon="-94.74579338" lat="46.86270312" timestamp="2022-03-07T11:49:27Z" user="" id="-113748848" actor="0"/>
+  <node version="9999" lon="-94.74460032" lat="46.86252783" timestamp="2022-03-07T11:49:27Z" user="" id="-113746448" actor="0"/>
+  <node version="9999" lon="-94.74196556" lat="46.86250452" timestamp="2022-03-07T11:49:27Z" user="" id="-113746568" actor="0"/>
+  <node version="9999" lon="-94.72329927" lat="46.86233762" timestamp="2022-03-07T11:49:27Z" user="" id="-113745728" actor="0"/>
+  <way version="9999" timestamp="2022-03-07T11:49:27Z" user="" id="-97346952" actor="0">
+    <nd ref="-113752328"/>
+    <nd ref="-113752688"/>
+    <nd ref="-113753168"/>
+    <nd ref="-113751968"/>
+    <nd ref="-113750768"/>
+    <nd ref="-113750888"/>
+    <nd ref="-113752808"/>
+    <nd ref="-113752928"/>
+    <nd ref="-113750528"/>
+    <nd ref="-113750048"/>
+    <nd ref="-113749688"/>
+    <nd ref="-113751488"/>
+    <nd ref="-113751848"/>
+    <nd ref="-113753288"/>
+    <nd ref="-113749568"/>
+    <nd ref="-113749808"/>
+    <nd ref="-113750288"/>
+    <nd ref="-113749928"/>
+    <nd ref="-113751008"/>
+    <nd ref="-113756288"/>
+    <nd ref="-113753408"/>
+    <nd ref="-113755208"/>
+    <nd ref="-113754008"/>
+    <nd ref="-113755328"/>
+    <nd ref="-113755448"/>
+    <nd ref="-113754128"/>
+    <nd ref="-113754968"/>
+    <nd ref="-113756528"/>
+    <nd ref="-113754608"/>
+    <nd ref="-113754248"/>
+    <nd ref="-113756648"/>
+    <nd ref="-113755808"/>
+    <nd ref="-113755568"/>
+    <nd ref="-113757128"/>
+    <nd ref="-113757008"/>
+    <nd ref="-113754368"/>
+    <nd ref="-113753768"/>
+    <nd ref="-113754488"/>
+    <nd ref="-113754728"/>
+    <nd ref="-113755928"/>
+    <nd ref="-113753528"/>
+    <nd ref="-113754848"/>
+    <nd ref="-113753648"/>
+    <nd ref="-113755088"/>
+    <nd ref="-113755688"/>
+    <nd ref="-113753888"/>
+    <nd ref="-113756048"/>
+    <nd ref="-113756168"/>
+    <nd ref="-113756408"/>
+    <nd ref="-113756768"/>
+    <nd ref="-113756888"/>
+    <nd ref="-113757368"/>
+    <nd ref="-113757848"/>
+    <nd ref="-113757488"/>
+    <nd ref="-113758088"/>
+    <nd ref="-113757968"/>
+    <nd ref="-113757728"/>
+    <nd ref="-113757248"/>
+    <nd ref="-113757608"/>
+    <nd ref="-113744288"/>
+    <nd ref="-113743448"/>
+    <nd ref="-113742128"/>
+    <nd ref="-113743208"/>
+    <nd ref="-113742008"/>
+    <nd ref="-113743568"/>
+    <nd ref="-113744648"/>
+    <nd ref="-113744768"/>
+    <nd ref="-113743328"/>
+    <nd ref="-113745008"/>
+    <nd ref="-113742608"/>
+    <nd ref="-113742368"/>
+    <nd ref="-113744048"/>
+    <nd ref="-113744408"/>
+    <nd ref="-113744888"/>
+    <nd ref="-113745128"/>
+    <nd ref="-113743088"/>
+    <nd ref="-113744168"/>
+    <nd ref="-113745248"/>
+    <nd ref="-113744528"/>
+    <nd ref="-113745368"/>
+    <nd ref="-113745488"/>
+    <nd ref="-113745608"/>
+    <nd ref="-113743928"/>
+    <nd ref="-113742248"/>
+    <nd ref="-113741888"/>
+    <nd ref="-113742488"/>
+    <nd ref="-113742728"/>
+    <nd ref="-113742848"/>
+    <nd ref="-113742968"/>
+    <nd ref="-113743688"/>
+    <nd ref="-113743808"/>
+    <nd ref="-113746808"/>
+    <nd ref="-113748128"/>
+    <nd ref="-113749448"/>
+    <nd ref="-113748248"/>
+    <nd ref="-113748368"/>
+    <nd ref="-113748488"/>
+    <nd ref="-113747168"/>
+    <nd ref="-113748848"/>
+    <nd ref="-113746448"/>
+    <nd ref="-113746568"/>
+    <nd ref="-113745728"/>
+    <tag k="DELETE" v="27"/>
+    <tag k="sort" v="0300000000000087-I"/>
+    <tag k="from_tm" v="43.49100000000"/>
+    <tag k="to_tm" v="58.10800000000"/>
+    <tag k="sll_zone" v="NORTH-CENTRAL"/>
+    <tag k="name" v="MN 87 (7 ton)"/>
+    <tag k="from_rp" v="44+00.974"/>
+    <tag k="to_rp" v="59+00.779"/>
+    <tag k="description" v="MN 87 from E. Jct. CSAH 6 to MN 64"/>
+    <tag k="posting_ton" v="7"/>
+    <tag k="length_m" v="23525.01087410000"/>
+  </way>
+  <node version="9999" lon="-95.07054273" lat="46.86327522" timestamp="2022-03-07T11:49:27Z" user="" id="-113748968" actor="0"/>
+  <node version="9999" lon="-95.05866614" lat="46.86341465" timestamp="2022-03-07T11:49:27Z" user="" id="-113746088" actor="0"/>
+  <node version="9999" lon="-95.03744432" lat="46.86387963" timestamp="2022-03-07T11:49:27Z" user="" id="-113749088" actor="0"/>
+  <node version="9999" lon="-95.03002548" lat="46.86388137" timestamp="2022-03-07T11:49:27Z" user="" id="-113748728" actor="0"/>
+  <node version="9999" lon="-95.02925839" lat="46.86388399" timestamp="2022-03-07T11:49:27Z" user="" id="-113746688" actor="0"/>
+  <node version="9999" lon="-95.02824388" lat="46.86391681" timestamp="2022-03-07T11:49:27Z" user="" id="-113746928" actor="0"/>
+  <node version="9999" lon="-95.02662355" lat="46.86393069" timestamp="2022-03-07T11:49:27Z" user="" id="-113748608" actor="0"/>
+  <node version="9999" lon="-95.02567328" lat="46.86394752" timestamp="2022-03-07T11:49:27Z" user="" id="-113749208" actor="0"/>
+  <node version="9999" lon="-95.02543115" lat="46.86392881" timestamp="2022-03-07T11:49:27Z" user="" id="-113747288" actor="0"/>
+  <node version="9999" lon="-95.02489301" lat="46.86388722" timestamp="2022-03-07T11:49:27Z" user="" id="-113749328" actor="0"/>
+  <node version="9999" lon="-95.02354505" lat="46.86367388" timestamp="2022-03-07T11:49:27Z" user="" id="-113748008" actor="0"/>
+  <node version="9999" lon="-95.02271327" lat="46.86339213" timestamp="2022-03-07T11:49:27Z" user="" id="-113745848" actor="0"/>
+  <node version="9999" lon="-95.02222977" lat="46.86317834" timestamp="2022-03-07T11:49:27Z" user="" id="-113747768" actor="0"/>
+  <node version="9999" lon="-95.02133177" lat="46.86252034" timestamp="2022-03-07T11:49:27Z" user="" id="-113745968" actor="0"/>
+  <node version="9999" lon="-95.02116308" lat="46.86239673" timestamp="2022-03-07T11:49:27Z" user="" id="-113746208" actor="0"/>
+  <node version="9999" lon="-95.01961706" lat="46.86082130" timestamp="2022-03-07T11:49:27Z" user="" id="-113747408" actor="0"/>
+  <way version="9999" timestamp="2022-03-07T11:49:27Z" user="" id="-97346808" actor="0">
+    <nd ref="-113748968"/>
+    <nd ref="-113746088"/>
+    <nd ref="-113749088"/>
+    <nd ref="-113748728"/>
+    <nd ref="-113746688"/>
+    <nd ref="-113746928"/>
+    <nd ref="-113748608"/>
+    <nd ref="-113749208"/>
+    <nd ref="-113747288"/>
+    <nd ref="-113749328"/>
+    <nd ref="-113748008"/>
+    <nd ref="-113745848"/>
+    <nd ref="-113747768"/>
+    <nd ref="-113745968"/>
+    <nd ref="-113746208"/>
+    <nd ref="-113747408"/>
+    <tag k="DELETE" v="28"/>
+    <tag k="sort" v="0300000000000087-I"/>
+    <tag k="from_tm" v="39.40700000000"/>
+    <tag k="to_tm" v="41.91300000000"/>
+    <tag k="sll_zone" v="NORTH-CENTRAL"/>
+    <tag k="name" v="MN 87 (7 ton)"/>
+    <tag k="from_rp" v="40+00.851"/>
+    <tag k="to_rp" v="43+00.384"/>
+    <tag k="description" v="MN 87 from MN 71 to W. Jct. CSAH 6"/>
+    <tag k="posting_ton" v="7"/>
+    <tag k="length_m" v="4032.01962907000"/>
+  </way>
+  <bound box="46.124159,-95.070543,46.863948,-92.279502" origin="http://www.openstreetmap.org/api/0.6"/>
+</osm>

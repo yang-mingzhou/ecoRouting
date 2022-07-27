@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<osm generator="Merkaartor 0.16" version="0.6">
+  <node version="9999" lon="-93.88584843" lat="44.53322642" timestamp="2022-03-07T11:49:58Z" user="" id="-112344056" actor="0"/>
+  <node version="9999" lon="-93.88572751" lat="44.53337139" timestamp="2022-03-07T11:49:58Z" user="" id="-112342136" actor="0"/>
+  <node version="9999" lon="-93.88548705" lat="44.53398544" timestamp="2022-03-07T11:49:58Z" user="" id="-112341296" actor="0"/>
+  <node version="9999" lon="-93.88588217" lat="44.53628254" timestamp="2022-03-07T11:49:58Z" user="" id="-112340816" actor="0"/>
+  <node version="9999" lon="-93.88633778" lat="44.53787247" timestamp="2022-03-07T11:49:58Z" user="" id="-112341896" actor="0"/>
+  <node version="9999" lon="-93.88725324" lat="44.53985044" timestamp="2022-03-07T11:49:58Z" user="" id="-112340936" actor="0"/>
+  <node version="9999" lon="-93.88754989" lat="44.54083844" timestamp="2022-03-07T11:49:58Z" user="" id="-112342736" actor="0"/>
+  <node version="9999" lon="-93.88748977" lat="44.54154112" timestamp="2022-03-07T11:49:58Z" user="" id="-112341656" actor="0"/>
+  <node version="9999" lon="-93.88728501" lat="44.54201984" timestamp="2022-03-07T11:49:58Z" user="" id="-112342016" actor="0"/>
+  <node version="9999" lon="-93.88658116" lat="44.54268700" timestamp="2022-03-07T11:49:58Z" user="" id="-112343936" actor="0"/>
+  <node version="9999" lon="-93.88589522" lat="44.54292640" timestamp="2022-03-07T11:49:58Z" user="" id="-112342256" actor="0"/>
+  <node version="9999" lon="-93.88441425" lat="44.54306390" timestamp="2022-03-07T11:49:58Z" user="" id="-112342376" actor="0"/>
+  <node version="9999" lon="-93.85739323" lat="44.54307036" timestamp="2022-03-07T11:49:58Z" user="" id="-112343336" actor="0"/>
+  <node version="9999" lon="-93.85718334" lat="44.54302125" timestamp="2022-03-07T11:49:58Z" user="" id="-112344176" actor="0"/>
+  <node version="9999" lon="-93.85409245" lat="44.54300857" timestamp="2022-03-07T11:49:58Z" user="" id="-112342496" actor="0"/>
+  <node version="9999" lon="-93.85175893" lat="44.54301933" timestamp="2022-03-07T11:49:58Z" user="" id="-112342616" actor="0"/>
+  <node version="9999" lon="-93.85156643" lat="44.54302078" timestamp="2022-03-07T11:49:58Z" user="" id="-112343216" actor="0"/>
+  <node version="9999" lon="-93.84961008" lat="44.54302072" timestamp="2022-03-07T11:49:58Z" user="" id="-112343576" actor="0"/>
+  <way version="9999" timestamp="2022-03-07T11:49:58Z" user="" id="-97510904" actor="0">
+    <nd ref="-112344056"/>
+    <nd ref="-112342136"/>
+    <nd ref="-112341296"/>
+    <nd ref="-112340816"/>
+    <nd ref="-112341896"/>
+    <nd ref="-112340936"/>
+    <nd ref="-112342736"/>
+    <nd ref="-112341656"/>
+    <nd ref="-112342016"/>
+    <nd ref="-112343936"/>
+    <nd ref="-112342256"/>
+    <nd ref="-112342376"/>
+    <nd ref="-112343336"/>
+    <nd ref="-112344176"/>
+    <nd ref="-112342496"/>
+    <nd ref="-112342616"/>
+    <nd ref="-112343216"/>
+    <nd ref="-112343576"/>
+    <tag k="DELETE" v="25"/>
+    <tag k="sort" v="0300000000000019-I"/>
+    <tag k="from_tm" v="135.32300000000"/>
+    <tag k="to_tm" v="137.83500000000"/>
+    <tag k="sll_zone" v="SOUTH"/>
+    <tag k="name" v="MN 19 (5 ton)"/>
+    <tag k="from_rp" v="135+00.180"/>
+    <tag k="to_rp" v="137+00.730"/>
+    <tag k="description" v="MN 19 from 1.1 mi. east of MN 93 to MN 169"/>
+    <tag k="posting_ton" v="5"/>
+    <tag k="length_m" v="4042.46739736000"/>
+  </way>
+  <bound box="44.533226,-93.887550,44.543070,-93.849610" origin="http://www.openstreetmap.org/api/0.6"/>
+</osm>
