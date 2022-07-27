@@ -30,5 +30,5 @@ Some scripts (for map matching) require cygwin and python 2.7
 Change Log
 -----
 
-### 7/26/2022
-Version 1.0 
+### 7/27/2022
+Version 1.0 Add static method
