@@ -21,6 +21,7 @@ class LookUpTable:
             self.lookUpTable = holeTable[self.request]
         else:
             self.lookUpTable = self.readTable(filename)
+        print("look up table generated")
 
     def __len__(self):
         return len(self.lookUpTable)
@@ -52,7 +53,6 @@ class LookUpTable:
                                 self.windowIdDict[w.getTup()] = i
                             numericalFeatures, categoricalFeatures = w.extractFeatures(self.edgesDict)
                             windowFeatureList.append([numericalFeatures, categoricalFeatures])
-                        print("preprocess finished")
                         if torch.cuda.is_available():
                             device = torch.device("cuda")
                         else:
