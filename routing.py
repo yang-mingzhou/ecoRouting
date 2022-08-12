@@ -75,7 +75,11 @@ class ParameterForTableIni:
 def main():
     startTime = time.time()
     # Murphy depot => Shakopee East (Depot)
-    origin, destination = Point(-93.2219, 44.979), Point(-93.4620, 44.7903)
+    # origin, destination = Point(-93.2219, 44.979), Point(-93.4620, 44.7903)
+    # Murphy Warehouse => Customer
+    #origin, destination = Point(-93.22040114903187, 44.98307130632795), Point(-93.17755951168938, 44.453148930484716)
+    # Customer => Murphy Warehouse
+    destination, origin = Point(-93.22040114903187, 44.98307130632795), Point(-93.17755951168938, 44.453148930484716)
     temperature = 1
     mass = 23000
     # Monday
@@ -83,21 +87,21 @@ def main():
     # 9am
     timeOfTheDay = 9
 
-    '''
+
     #big bounding box: from murphy company (-93.22025, 44.9827), travel 70 miles
     distance = 70
     distance = distance*1609.34 # mile->km
     bbox = ox.utils_geo.bbox_from_point((44.9827, -93.22025), dist=distance, project_utm = False, return_crs = False)
     boundingBox = Box(bbox[-1], bbox[-2], bbox[-3], bbox[-4])
     print(boundingBox)
-    '''
+
     # small bounding box
-    boundingBox = Box(-93.4975, -93.1850, 44.7458, 45.0045)
+    # boundingBox = Box(-93.4975, -93.1850, 44.7458, 45.0045)
     # Request
     locationRequest = LocationRequest(origin, destination, temperature, mass, dayOfTheWeek , timeOfTheDay, boundingBox)
 
     # generate new look up table or load it from folder \lookupTables
-    newLuTable = True
+    newLuTable = False
 
     # filename for lookup table
     lutablefilenameFuel = "lUTableForFuel"
@@ -134,27 +138,34 @@ def main():
     ecoRouteFileName = 'ecoRouteTest.json'
     saveRoutes(ecoEdgePath, graphWithElevation.getEdges(), ecoRouteFileName)
     endTime = time.time()
-    print('Execution time:', endTime-startTime, 'seconds')
-    plotRoutes([ecoEdgePath], graphWithElevation.getEdges(), ['green'], 'routingresults', ['eco route'])
+    #print('Execution time:', endTime-startTime, 'seconds')
+    #plotRoutes([ecoEdgePath], graphWithElevation.getEdges(), ['green'], 'routingresults', ['eco route'])
 
-    '''
+
     # shortest route
-    shortestNodePath = findShortestPath(graphWithElevation, locationRequest)
-    shortestPath = nodePathTOEdgePath(shortestNodePath, edges)
-    calAndPrintPathAttributes(graphWithElevation, shortestPath, "shortestPath")
+    # shortestNodePath = findShortestPath(graphWithElevation, locationRequest)
+    # shortestPath = nodePathTOEdgePath(shortestNodePath, edges)
+    # calAndPrintPathAttributes(graphWithElevation, shortestPath, "shortestPath")
 
     # fastest route
     filenameTime = "lookUpTableForTime"
-    lookUpTable = trainNewLUTable(graphWithElevation, locationRequest, filenameTime, mode='time')
-    lookUpTable = LookUpTable(locationRequest, filenameTime)
+    if newLuTable:
+        lookUpTable = trainNewLUTable(graphWithElevation, locationRequest, filenameTime,windowIdDictFilename, mode="time")
+    else:
+        # load table from filename.pkl
+        lookUpTable = LookUpTable(locationRequest, filenameTime, windowIdDictFilename)
     fastestPath, shortestTime, fastestEdgePath = findFastestPathAndCalTime(graphWithElevation, locationRequest, lookUpTable)
     calAndPrintPathAttributes(graphWithElevation, fastestEdgePath, "fastestPath")
+    fastestRouteFileName = 'fastestRouteTest.json'
+    saveRoutes(fastestEdgePath, graphWithElevation.getEdges(), fastestRouteFileName)
 
     # save the routing results to the "./results/filename.html"
-    plotRoutes([ecoEdgePath, fastestEdgePath, shortestPath], graphWithElevation.getEdges(), ['green','red','blue'], 'routingresults', ['eco route','fastest route','shortest route'])
-    plotRoutes([ecoEdgePath], graphWithElevation.getEdges(), ['green'], 'testBigBox',['eco route'])
-    graphWithElevation.plotPathList([shortestNodePath, ecoRoute, fastestPath],'routing result.pdf')
-    '''
+    plotRoutes([ecoEdgePath, fastestEdgePath], graphWithElevation.getEdges(), ['green', 'red'],
+               'routingresults', ['eco route', 'fastest route'])
+    #plotRoutes([ecoEdgePath, fastestEdgePath, shortestPath], graphWithElevation.getEdges(), ['green','red','blue'], 'routingresults', ['eco route','fastest route','shortest route'])
+    #plotRoutes([ecoEdgePath], graphWithElevation.getEdges(), ['green'], 'testBigBox',['eco route'])
+    #graphWithElevation.plotPathList([shortestNodePath, ecoRoute, fastestPath],'routing result.pdf')
+
 
 
 

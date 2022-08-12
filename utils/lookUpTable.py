@@ -97,7 +97,7 @@ class LookUpTable:
         folderOfLUTable = 'lookupTables'
         with open(os.path.join(folderOfLUTable,filename+".pkl"), "rb") as tf:
             loadDict = pickle.load(tf)
-        with open(os.path.join(folderOfLUTable,self.windowIdDictFilename+".pkl"), "rb")as tf:
+        with open(self.windowIdDictFilename+".pkl", "rb")as tf:
             self.windowIdDict = pickle.load(tf)
         return loadDict[self.request]
 
