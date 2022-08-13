@@ -32,3 +32,5 @@ Change Log
 
 ### 7/27/2022
 Version 1.0 Add static method
+
+Version 2.0 Split the user interface from the implementation by moving helper functions to osmgraph.GraphFunctions
