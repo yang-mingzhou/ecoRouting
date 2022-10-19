@@ -522,12 +522,12 @@ class GraphFunctions():
 
         if mode == "time":
             path, _, edgePath = GraphFunctions.findFastestPathAndCalTime(graphWithElevation,locationRequest, lookUpTable)
-            length, energy, time = GraphFunctions.calAndPrintPathAttributes(graphWithElevation, edgePath, "fastestPath")
+            length, energy, traveltime = GraphFunctions.calAndPrintPathAttributes(graphWithElevation, edgePath, "fastestPath")
 
         else:
             # eco route
             path, _, edgePath = GraphFunctions.findEcoPathAndCalEnergy(graphWithElevation, locationRequest, lookUpTable)
-            length, energy, time = GraphFunctions.calAndPrintPathAttributes(graphWithElevation, edgePath, "ecoRoute")
+            length, energy, traveltime = GraphFunctions.calAndPrintPathAttributes(graphWithElevation, edgePath, "ecoRoute")
 
         GraphFunctions.saveRoutes(edgePath, graphWithElevation.getEdges(), filename)
-        return edgePath, length, energy, time
+        return edgePath, length, energy, traveltime

@@ -34,8 +34,8 @@ class LocationRequest:
         # Monday
         self.dayOfTheWeek = dayOfTheWeek
         # 9 am
-        time = timeOfTheDay
-        self.timeOfTheDay = self.calTimeStage(time)
+        t = timeOfTheDay
+        self.timeOfTheDay = self.calTimeStage(t)
         self.boundingBox = boundingBox
 
     def calTimeStage(self, t):
@@ -90,7 +90,7 @@ def main():
 
     # eco-routing
     # the result trajectory will be saved in "./results/filename"
-    ecoEdgePath,length, energy, time = GraphFunctions.routingAndSaveResults(graphWithElevation, locationRequest, mode = 'fuel', filename = 'ecoRoute.json', usingLookUpTable=True, newLookUpTable = True, parameterForTableIni = ParameterForTableIni())
+    ecoEdgePath,length, energy, traveltime = GraphFunctions.routingAndSaveResults(graphWithElevation, locationRequest, mode = 'fuel', filename = 'ecoRoute.json', usingLookUpTable=True, newLookUpTable = True, parameterForTableIni = ParameterForTableIni())
 
     # shortest route
     # shortestNodePath = GraphFunctions.findShortestPath(graphWithElevation, locationRequest)
