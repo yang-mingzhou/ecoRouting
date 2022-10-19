@@ -282,7 +282,7 @@ class GraphFunctions():
         energy = osmGraph.totalEnergy(edgePath)
         time = osmGraph.totalTime(edgePath)
         print(pathname + ":" + f"{numberOfSegments} segments, {length} meters, {energy} liters, {time} seconds")
-        return
+        return length, energy, time
 
     # plot map matching results
     @staticmethod
@@ -522,12 +522,12 @@ class GraphFunctions():
 
         if mode == "time":
             path, _, edgePath = GraphFunctions.findFastestPathAndCalTime(graphWithElevation,locationRequest, lookUpTable)
-            GraphFunctions.calAndPrintPathAttributes(graphWithElevation, edgePath, "fastestPath")
+            length, energy, time = GraphFunctions.calAndPrintPathAttributes(graphWithElevation, edgePath, "fastestPath")
 
         else:
             # eco route
             path, _, edgePath = GraphFunctions.findEcoPathAndCalEnergy(graphWithElevation, locationRequest, lookUpTable)
-            GraphFunctions.calAndPrintPathAttributes(graphWithElevation, edgePath, "ecoRoute")
+            length, energy, time = GraphFunctions.calAndPrintPathAttributes(graphWithElevation, edgePath, "ecoRoute")
 
         GraphFunctions.saveRoutes(edgePath, graphWithElevation.getEdges(), filename)
-        return edgePath
+        return edgePath, length, energy, time

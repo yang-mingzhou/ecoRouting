@@ -90,7 +90,7 @@ def main():
 
     # eco-routing
     # the result trajectory will be saved in "./results/filename"
-    ecoEdgePath = GraphFunctions.routingAndSaveResults(graphWithElevation, locationRequest, mode = 'fuel', filename = 'ecoRoute.json', usingLookUpTable=True, newLookUpTable = True, parameterForTableIni = ParameterForTableIni())
+    ecoEdgePath,length, energy, time = GraphFunctions.routingAndSaveResults(graphWithElevation, locationRequest, mode = 'fuel', filename = 'ecoRoute.json', usingLookUpTable=True, newLookUpTable = True, parameterForTableIni = ParameterForTableIni())
 
     # shortest route
     # shortestNodePath = GraphFunctions.findShortestPath(graphWithElevation, locationRequest)
@@ -99,11 +99,10 @@ def main():
 
     # fastest route
     # the result trajectory will be saved in "./results/filename"
-    fastestEdgePath = GraphFunctions.routingAndSaveResults(graphWithElevation, locationRequest, mode = 'time', filename = 'fastestRoute.json', usingLookUpTable=True, newLookUpTable = True, parameterForTableIni = ParameterForTableIni())
+    # fastestEdgePath = GraphFunctions.routingAndSaveResults(graphWithElevation, locationRequest, mode = 'time', filename = 'fastestRoute.json', usingLookUpTable=True, newLookUpTable = True, parameterForTableIni = ParameterForTableIni())
 
     # save the routing results to the "./results/filename.html"
-    GraphFunctions.plotRoutes([ecoEdgePath, fastestEdgePath], graphWithElevation.getEdges(), ['green', 'red'],
-               filename='routingresults', labels=['eco route', 'fastest route'])
+    #GraphFunctions.plotRoutes([ecoEdgePath, fastestEdgePath], graphWithElevation.getEdges(), ['green', 'red'], filename='routingresults', labels=['eco route', 'fastest route'])
     #plotRoutes([ecoEdgePath, fastestEdgePath, shortestPath], graphWithElevation.getEdges(), ['green','red','blue'], 'routingresults', ['eco route','fastest route','shortest route'])
 
 
