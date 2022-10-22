@@ -247,6 +247,31 @@ class GraphFromGdfs(OsmGraph):
 
 class GraphFunctions():
     @staticmethod
+    def __initGoFigure(lat, long, type='markers', label='default', size=5, color='red'):
+        '''
+        type = 'markers' or 'lines'
+        lat/long: list, if 'type == lines'; float, else
+        '''
+        fig = go.Figure(go.Scattermapbox(
+            name=label,
+            mode=type,
+            lon=long,
+            lat=lat,
+            marker={'size': size, 'color': color}))
+        return fig
+
+    @staticmethod
+    def __addTrace(fig, lat, long, type='markers', label='default', size=5, color='red'):
+        print(color)
+        fig.add_trace(go.Scattermapbox(
+            name=label,
+            mode=type,
+            lon=long,
+            lat=lat,
+            marker={'size': size, 'color': color}))
+        return fig
+
+    @staticmethod
     def plot_traj(data):
         lat = data['gps_Latitude'].tolist()
         long = data['gps_Longitude'].tolist()
@@ -345,6 +370,38 @@ class GraphFunctions():
                               'zoom': zoom})
 
         plotly.offline.plot(fig, filename=os.path.join(directory, filename + '.html'), auto_open=True)
+
+    @staticmethod
+    def __plotFigAndSave(fig, lat_center, long_center, filename):
+        fig.update_layout(mapbox_style="stamen-terrain",
+                          mapbox_center_lat=30, mapbox_center_lon=-80)
+        fig.update_layout(margin={"r": 0, "t": 0, "l": 0, "b": 0},
+                          mapbox={
+                              'center': {'lat': lat_center,
+                                         'lon': long_center},
+                              'zoom': 9.5})
+        plotly.offline.plot(fig, filename=filename, auto_open=False)
+        return
+
+    @staticmethod
+    def plotPointList(pointDict, colorList, filename):
+        '''
+        pointDict: {"label": list of points}
+        '''
+        i = 0
+        for label in pointDict:
+            lat, long = zip(*pointDict[label])
+            # adding the lines joining the nodes
+            if i == 0:
+                fig = GraphFunctions.__initGoFigure(lat, long, type='markers', label=label, size=15, color=colorList[i])
+
+            else:
+                fig = GraphFunctions.__addTrace(fig, lat, long, type='markers', label=label, size=15, color=colorList[i])
+            i += 1
+        # getting center for plots:
+        lat_center = np.mean(lat)
+        long_center = np.mean(long)
+        GraphFunctions.__plotFigAndSave(fig, lat_center, long_center, filename)
 
     @staticmethod
     def saveRoutes(route, network_gdf, filename):

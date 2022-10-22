@@ -3,6 +3,7 @@ from utils.spaitalShape import Point, OdPair, Box
 import time
 import osmnx as ox
 import pickle
+import itertools
 # Profiling: python -m cProfile -o profile.pstats routing.py
 # Visualize profile: snakeviz profile.pstats
 
@@ -58,8 +59,10 @@ class ParameterForTableIni:
 
 
 def main():
-    nodeList = [Point(-93.2219, 44.979), Point(-93.2494,44.83755), Point(-93.39415,45.15355), Point(-93.44845, 44.79405)]
+    nodeList = [Point(-93.2219, 44.979), Point(-93.2494,44.83755), Point(-93.4071, 44.9903), Point(-93.44845, 44.79405)]
     dictRes = {}
+    ecoPaths = {}
+    fastPaths = {}
     for i in range(len(nodeList)):
         for j in range(len(nodeList)):
             if i != j:
@@ -91,7 +94,7 @@ def main():
                 # eco-routing
                 # the result trajectory will be saved in "./results/filename"
                 ecoEdgePath, length, energy, time = GraphFunctions.routingAndSaveResults(graphWithElevation, locationRequest, mode = 'fuel', filename = str(i)+str(j)+'ecoRoute.json', usingLookUpTable=True, newLookUpTable = True, parameterForTableIni = ParameterForTableIni())
-
+                ecoPaths[i,j] = ecoEdgePath
                 dictRes[(i, j, "eco")] = (length, energy, time)
 
                 # shortest route
@@ -102,16 +105,35 @@ def main():
                 # fastest route
                 # the result trajectory will be saved in "./results/filename"
                 fastestEdgePath, length, energy, time = GraphFunctions.routingAndSaveResults(graphWithElevation, locationRequest, mode = 'time', filename = str(i)+str(j)+'fastestRoute.json', usingLookUpTable=True, newLookUpTable = True, parameterForTableIni = ParameterForTableIni())
-
+                fastPaths[i,j] = fastestEdgePath
                 dictRes[(i, j, "fast")] = (length, energy, time)
 
                 # save the routing results to the "./results/filename.html"
                 #GraphFunctions.plotRoutes([ecoEdgePath, fastestEdgePath], graphWithElevation.getEdges(), ['green', 'red'], filename='routingresults', labels=['eco route', 'fastest route'])
                 #plotRoutes([ecoEdgePath, fastestEdgePath, shortestPath], graphWithElevation.getEdges(), ['green','red','blue'], 'routingresults', ['eco route','fastest route','shortest route'])
-    print(dictRes)
+    schedulepermut = [[0]+list(x)+[0] for x in list(itertools.permutations(list(range(1,len(nodeList))), ))]
+    ecoSchedule = []
+    minEcoToll = 99999
+    travelTime = 0
+    length = 0
+    for schedule in schedulepermut:
+        ecoToll = 0
+        travelTime = 0
+        length = 0
+        for i in range(len(schedule)-1):
+            ecoToll += dictRes[(schedule[i], schedule[i+1], "eco")][1]
+            travelTime += dictRes[(schedule[i], schedule[i+1], "eco")][2]
+            length += dictRes[(schedule[i], schedule[i+1], "eco")][0]
+        if ecoToll < minEcoToll:
+            ecoSchedule = schedule
+            minEcoToll = ecoToll
+    pathList = []
+    for i in range(len(ecoSchedule)-1):
+        pathList.append(ecoPaths[ecoSchedule[i], ecoSchedule[i+1]])
+    GraphFunctions.plotRoutes(pathList, graphWithElevation.getEdges(), ['green', 'red','blue', "black"], filename='routingresults', labels=['route1', 'route2', 'route3','route4'])
     with open("file.pkl", "wb") as tf:
         pickle.dump(dictRes, tf)
-
+    GraphFunctions.plotPointList({"Murphy Depot": [(-93.2219, 44.979)], "M. Amundson":[(-93.2494,44.83755)], "Core Mark International": [(-93.4071, 44.9903)], "Conklin Co Inc": [(-93.44845, 44.79405)] }, ['red' for _ in range(4)], 'points')
 
 if __name__ == '__main__':
     main()
