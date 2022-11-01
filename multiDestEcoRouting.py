@@ -139,6 +139,7 @@ def main():
         pickle.dump(dictRes, tf)
     GraphFunctions.plotPointList({"Murphy Depot": [(-93.2219, 44.979)], "M. Amundson":[(-93.2494,44.83755)], "Core Mark International": [(-93.4071, 44.9903)], "Conklin Co Inc": [(-93.44845, 44.79405)] }, ['red' for _ in range(4)], 'points.html')
     print(ecoTollList, travelTimeList, lengthList)
+
 if __name__ == '__main__':
     main()
 
