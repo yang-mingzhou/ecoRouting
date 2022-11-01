@@ -128,13 +128,17 @@ def main():
             ecoSchedule = schedule
             minEcoToll = ecoToll
     pathList = []
+    ecoTollList, travelTimeList, lengthList = [], [], []
     for i in range(len(ecoSchedule)-1):
         pathList.append(ecoPaths[ecoSchedule[i], ecoSchedule[i+1]])
+        ecoTollList.append(dictRes[(ecoSchedule[i], ecoSchedule[i + 1], "eco")][1])
+        travelTimeList.append(dictRes[(ecoSchedule[i], ecoSchedule[i + 1], "eco")][2])
+        lengthList.append(dictRes[(ecoSchedule[i], ecoSchedule[i + 1], "eco")][0])
     GraphFunctions.plotRoutes(pathList, graphWithElevation.getEdges(), ['green', 'red','blue', "black"], filename='routingresults', labels=['route1', 'route2', 'route3','route4'])
     with open("file.pkl", "wb") as tf:
         pickle.dump(dictRes, tf)
-    GraphFunctions.plotPointList({"Murphy Depot": [(-93.2219, 44.979)], "M. Amundson":[(-93.2494,44.83755)], "Core Mark International": [(-93.4071, 44.9903)], "Conklin Co Inc": [(-93.44845, 44.79405)] }, ['red' for _ in range(4)], 'points')
-
+    GraphFunctions.plotPointList({"Murphy Depot": [(-93.2219, 44.979)], "M. Amundson":[(-93.2494,44.83755)], "Core Mark International": [(-93.4071, 44.9903)], "Conklin Co Inc": [(-93.44845, 44.79405)] }, ['red' for _ in range(4)], 'points.html')
+    print(ecoTollList, travelTimeList, lengthList)
 if __name__ == '__main__':
     main()
 
