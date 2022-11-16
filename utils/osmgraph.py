@@ -420,6 +420,7 @@ class GraphFunctions():
         nodesElevation = pd.read_csv(os.path.join("statistical data", filename), index_col=0)
         nodes['indexId'] = nodes.index
         nodes['elevation'] = nodes.apply(lambda x: nodesElevation.loc[x['indexId'], 'MeanElevation'], axis=1)
+        print(nodes.head())
 
     @staticmethod
     def extractEdgesElevation(nodesWithElevation, edges):
