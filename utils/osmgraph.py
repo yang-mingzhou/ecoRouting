@@ -262,7 +262,6 @@ class GraphFunctions():
 
     @staticmethod
     def __addTrace(fig, lat, long, type='markers', label='default', size=5, color='red'):
-        print(color)
         fig.add_trace(go.Scattermapbox(
             name=label,
             mode=type,
@@ -387,6 +386,7 @@ class GraphFunctions():
     def plotPointList(pointDict, colorList, filename):
         '''
         pointDict: {"label": list of points}
+        filename: string end with ".html"
         '''
         i = 0
         for label in pointDict:
@@ -397,6 +397,31 @@ class GraphFunctions():
 
             else:
                 fig = GraphFunctions.__addTrace(fig, lat, long, type='markers', label=label, size=15, color=colorList[i])
+            i += 1
+        # getting center for plots:
+        lat_center = np.mean(lat)
+        long_center = np.mean(long)
+        GraphFunctions.__plotFigAndSave(fig, lat_center, long_center, filename)
+    
+    @staticmethod
+    def plotTrajList(trajList, color, label, filename, order = 0):
+        '''
+        filename: string end with ".html"
+        order: 0=>(lat, lon), 1=>(lon,lat)
+        '''
+                
+        i = 0
+        for traj in trajList:
+            if order == 0:
+                lat, long = zip(*traj)
+            else:
+                long, lat = zip(*traj)
+            # adding the lines joining the nodes
+            if i == 0:
+                fig = GraphFunctions.__initGoFigure(lat, long, type='lines', label=label, size=5, color=color)
+
+            else:
+                fig = GraphFunctions.__addTrace(fig, lat, long, type='lines', label=label, size=5, color=color)
             i += 1
         # getting center for plots:
         lat_center = np.mean(lat)
