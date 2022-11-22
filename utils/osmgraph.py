@@ -427,6 +427,7 @@ class GraphFunctions():
         lat_center = np.mean(lat)
         long_center = np.mean(long)
         GraphFunctions.__plotFigAndSave(fig, lat_center, long_center, filename)
+        
 
     @staticmethod
     def saveRoutes(route, network_gdf, filename):

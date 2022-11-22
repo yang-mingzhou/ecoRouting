@@ -1,4 +1,5 @@
 from shapely.geometry import Polygon
+import shapely.geometry
 
 
 class Point:
@@ -18,6 +19,9 @@ class Point:
 
     def isContained(self, box):
         return box.contains(self)
+    
+    def geom(self):
+        return shapely.geometry.Point(self.x, self.y)
 
 
 class OdPair:

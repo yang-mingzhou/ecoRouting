@@ -86,7 +86,7 @@ def main():
     locationRequest = LocationRequest(origin, destination, temperature, mass, dayOfTheWeek , timeOfTheDay, boundingBox)
 
     # Loading graph (downloading it if not exist) and pre-processing
-    graphWithElevation = GraphFunctions.loadGraph(locationRequest)
+    graphWithElevation = GraphFunctions.loadGrph(locationRequest)
 
     # eco-routing
     # the result trajectory will be saved in "./results/filename"

@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 import math
+import ast
 
 def edgePreprocessing(nodesGdf, edgesGdf,temperature, mass,dayOfTheWeek, timeOfTheDay):
     edgesGdf['odPair'] = edgesGdf.apply(lambda x: (x.u, x.v), axis=1)
@@ -69,6 +70,7 @@ def edgePreprocessing(nodesGdf, edgesGdf,temperature, mass,dayOfTheWeek, timeOfT
     return edgesWithoutBlackList
 
 
+
 def replaceRoadTypeMissingInTrainingData(arraylike):
     roadtypeSet = {0, 1, 2, 3, 4, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 21}
     t = arraylike['roadtype']
@@ -82,7 +84,9 @@ def replaceRoadTypeMissingInTrainingData(arraylike):
         return 0
 
 def isBlackList(arraylike):
-    return arraylike.roadtype == 0
+    with open('blacklistSegments.txt','r') as f:
+        blackList = ast.literal_eval(f.read())
+    return (arraylike.roadtype == 0) | (arraylike.name in blackSegSet)
 
 def categoricalFeature(arraylike):
     return [arraylike.roadtype, arraylike.timeOfTheDay, arraylike.dayOfTheWeek, arraylike.lanes, arraylike.bridgeOrNot, arraylike.oriSignalCategoried, arraylike.destSignalCategoried]
