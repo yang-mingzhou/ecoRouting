@@ -4,6 +4,7 @@ import math
 import ast
 
 def edgePreprocessing(nodesGdf, edgesGdf,temperature, mass,dayOfTheWeek, timeOfTheDay):
+
     edgesGdf['odPair'] = edgesGdf.apply(lambda x: (x.u, x.v), axis=1)
     # mass
     edgesGdf['mass'] = mass
@@ -39,7 +40,7 @@ def edgePreprocessing(nodesGdf, edgesGdf,temperature, mass,dayOfTheWeek, timeOfT
     roadtypeDict = np.load('statistical data/road_type_dictionary.npy', allow_pickle=True).item()
     edgesGdf['roadtype'] = edgesGdf['roadtype'].apply(lambda x: roadtypeDict[x] if x in roadtypeDict else 0)
     edgesGdf['roadtype'] = edgesGdf.apply(lambda x: replaceRoadTypeMissingInTrainingData(x),axis=1)
-    edgesGdf['isBlackList'] = edgesGdf.apply(lambda x: isBlackList(x), axis=1)
+
     # time
     edgesGdf['timeOfTheDay'] = timeOfTheDay
     #edgesGdf['timeOfTheDay'] = edgesGdf['timeOfTheDay'].apply(lambda x: calTimeStage(x))
@@ -65,8 +66,13 @@ def edgePreprocessing(nodesGdf, edgesGdf,temperature, mass,dayOfTheWeek, timeOfT
 
     edgesGdf['categoricalFeature'] = edgesGdf.apply(lambda x: categoricalFeature(x), axis=1)
 
+    # remove blacklist segment (only for the first time)
+    if 'isBlackList' not in edgesGdf.columns:
+        edgesGdf['isBlackList'] = edgesGdf.apply(lambda x: isBlackList(x), axis=1)
+
     edgesWithoutBlackList = edgesGdf[edgesGdf['isBlackList'] == False]
     edgesWithoutBlackList.reset_index(drop=True, inplace=True)
+    print("before:{}, after:{}".format(len(edgesGdf),len(edgesWithoutBlackList)))
     return edgesWithoutBlackList
 
 
@@ -84,9 +90,9 @@ def replaceRoadTypeMissingInTrainingData(arraylike):
         return 0
 
 def isBlackList(arraylike):
-    with open('blacklistSegments.txt','r') as f:
+    with open('statistical data/blacklistSegments.txt','r') as f:
         blackList = ast.literal_eval(f.read())
-    return (arraylike.roadtype == 0) | (arraylike.name in blackSegSet)
+    return (arraylike.roadtype == 0) | (arraylike.name in blackList)
 
 def categoricalFeature(arraylike):
     return [arraylike.roadtype, arraylike.timeOfTheDay, arraylike.dayOfTheWeek, arraylike.lanes, arraylike.bridgeOrNot, arraylike.oriSignalCategoried, arraylike.destSignalCategoried]

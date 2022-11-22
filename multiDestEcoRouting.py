@@ -74,7 +74,7 @@ def main():
                 dayOfTheWeek = 1
                 # 9am
                 timeOfTheDay = 9
-                bigBbox = False
+                bigBbox = True
                 if bigBbox:
                     #big bounding box: from murphy company (-93.22025, 44.9827), travel 70 miles
                     distance = 70
