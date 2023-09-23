@@ -19,8 +19,11 @@ class Window:
     def getTup(self):
         return tuple([self.minusSeg, self.prevSeg, self.midSeg, self.sucSeg])
 
-    def valid(self):
-        return self.prevSeg != self.sucSeg
+    # def valid(self):
+    #     return self.prevSeg != self.sucSeg
+
+    def valid(self, edgesDict):
+        return self.prevSeg != self.sucSeg and not uTurn(edgesDict, self.midSeg, self.sucSeg)
 
     def extractFeatures(self, edgesDict):
         prevSegNumFeature, prevSegCatFeature = edgeFeature(self.prevSeg, edgesDict, self.minusSeg)
@@ -37,6 +40,14 @@ class WindowFromList(Window):
         self.prevSeg = segList[1]
         self.midSeg = segList[2]
         self.sucSeg = segList[3]
+
+
+def uTurn(edgesDict, midSegID, sucSegID):
+    if midSegID == -1 or sucSegID == -1:
+        return False
+    departNode = edgesDict[midSegID]["u"]
+    destNode = edgesDict[sucSegID]["v"]
+    return departNode == destNode
 
 
 def edgeFeature(segmentIDInGdf, edgesDict, prevEdgeId):

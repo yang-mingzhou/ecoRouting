@@ -430,8 +430,7 @@ class GraphFunctions():
         
 
     @staticmethod
-    def saveRoutes(route, network_gdf, filename):
-        directory = './results'
+    def saveRoutes(route, network_gdf, filename, directory = './results'):
         if not os.path.exists(directory):
             os.makedirs(directory)
 
@@ -574,7 +573,7 @@ class GraphFunctions():
         return graphWithElevation
 
     @staticmethod
-    def routingAndSaveResults(graphWithElevation, locationRequest, mode, filename, usingLookUpTable, newLookUpTable = False, parameterForTableIni = None):
+    def routingAndSaveResults(graphWithElevation, locationRequest, mode, filename, usingLookUpTable, newLookUpTable = False, lookUpTableName = None, parameterForTableIni = None):
         '''
         Input:
             graphWithElevation => (OSMGraph) Input Graph
@@ -591,7 +590,10 @@ class GraphFunctions():
         '''
         if usingLookUpTable:
             # filename for lookup table
-            lutablefilename = "lUTableForTime" if mode == 'time' else "lUTableForFuel"
+            if not lookUpTableName:
+                lutablefilename = "lUTableForTime" if mode == 'time' else "lUTableForFuel"
+            else:
+                lutablefilename = lookUpTableName
             # filename for lookup table
             windowIdDictFilename = "./results/windowIdDict"
             if newLookUpTable:

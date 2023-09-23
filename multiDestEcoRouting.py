@@ -63,6 +63,7 @@ def main():
     dictRes = {}
     ecoPaths = {}
     fastPaths = {}
+    flagFirstIter = True
     for i in range(len(nodeList)):
         for j in range(len(nodeList)):
             if i != j:
@@ -75,6 +76,7 @@ def main():
                 # 9am
                 timeOfTheDay = 9
                 bigBbox = True
+                lookupTableName = "lUTableForFuel"
                 if bigBbox:
                     #big bounding box: from murphy company (-93.22025, 44.9827), travel 70 miles
                     distance = 70
@@ -85,15 +87,22 @@ def main():
                 else:
                     # small bounding box
                     boundingBox = Box(-93.4975, -93.1850, 44.7458, 45.0045)
+                    lookupTableName = "lUTableForFuel_smallBbox"
                 # Request
                 locationRequest = LocationRequest(origin, destination, temperature, mass, dayOfTheWeek , timeOfTheDay, boundingBox)
 
                 # Loading graph (downloading it if not exist) and pre-processing
-                graphWithElevation = GraphFunctions.loadGraph(locationRequest)
+                if flagFirstIter:
+                    graphWithElevation = GraphFunctions.loadGraph(locationRequest)
+                    newLookUpTable = True
+                    flagFirstIter = False
+                else:
+                    newLookUpTable = False
 
                 # eco-routing
                 # the result trajectory will be saved in "./results/filename"
-                ecoEdgePath, length, energy, time = GraphFunctions.routingAndSaveResults(graphWithElevation, locationRequest, mode = 'fuel', filename = str(i)+str(j)+'ecoRoute.json', usingLookUpTable=True, newLookUpTable = True, parameterForTableIni = ParameterForTableIni())
+                ecoEdgePath, length, energy, time = GraphFunctions.routingAndSaveResults(graphWithElevation, locationRequest, mode = 'fuel', filename = str(i)+str(j)+'ecoRoute.json',
+                                                                                         usingLookUpTable=True, newLookUpTable = newLookUpTable, lookUpTableName= lookupTableName, parameterForTableIni = ParameterForTableIni())
                 ecoPaths[i,j] = ecoEdgePath
                 dictRes[(i, j, "eco")] = (length, energy, time)
 
@@ -104,9 +113,9 @@ def main():
 
                 # fastest route
                 # the result trajectory will be saved in "./results/filename"
-                fastestEdgePath, length, energy, time = GraphFunctions.routingAndSaveResults(graphWithElevation, locationRequest, mode = 'time', filename = str(i)+str(j)+'fastestRoute.json', usingLookUpTable=True, newLookUpTable = True, parameterForTableIni = ParameterForTableIni())
-                fastPaths[i,j] = fastestEdgePath
-                dictRes[(i, j, "fast")] = (length, energy, time)
+                # fastestEdgePath, length, energy, time = GraphFunctions.routingAndSaveResults(graphWithElevation, locationRequest, mode = 'time', filename = str(i)+str(j)+'fastestRoute.json', usingLookUpTable=True, newLookUpTable = True, parameterForTableIni = ParameterForTableIni())
+                # fastPaths[i,j] = fastestEdgePath
+                # dictRes[(i, j, "fast")] = (length, energy, time)
 
                 # save the routing results to the "./results/filename.html"
                 #GraphFunctions.plotRoutes([ecoEdgePath, fastestEdgePath], graphWithElevation.getEdges(), ['green', 'red'], filename='routingresults', labels=['eco route', 'fastest route'])
@@ -135,7 +144,7 @@ def main():
         travelTimeList.append(dictRes[(ecoSchedule[i], ecoSchedule[i + 1], "eco")][2])
         lengthList.append(dictRes[(ecoSchedule[i], ecoSchedule[i + 1], "eco")][0])
     GraphFunctions.plotRoutes(pathList, graphWithElevation.getEdges(), ['green', 'red','blue', "black"], filename='routingresults', labels=['route1', 'route2', 'route3','route4'])
-    with open("file.pkl", "wb") as tf:
+    with open("results/file.pkl", "wb") as tf:
         pickle.dump(dictRes, tf)
     GraphFunctions.plotPointList({"Murphy Depot": [(-93.2219, 44.979)], "M. Amundson":[(-93.2494,44.83755)], "Core Mark International": [(-93.4071, 44.9903)], "Conklin Co Inc": [(-93.44845, 44.79405)] }, ['red' for _ in range(4)], 'points.html')
     print(ecoTollList, travelTimeList, lengthList)

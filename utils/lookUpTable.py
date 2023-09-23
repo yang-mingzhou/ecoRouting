@@ -57,7 +57,6 @@ class LookUpTable:
                             device = torch.device("cuda")
                         else:
                             device = torch.device("cpu")
-                        device = torch.device("cpu")
                         numericalFeatures = torch.Tensor([x[0] for x in windowFeatureList]).to(device)
                         categoricalFeatures = torch.LongTensor([x[1] for x in windowFeatureList]).transpose(1,2).contiguous().to(device)
                         # without dataloader

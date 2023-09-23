@@ -15,7 +15,7 @@ class EstimationModel:
         device = torch.device("cuda")
     else:
         device = torch.device("cpu")
-    device = torch.device("cpu")
+    # device = torch.device("cpu")
     def __init__(self, outputOfModel):
         '''
 
@@ -68,7 +68,7 @@ class MultiTaskEstimationModel:
         device = torch.device("cuda")
     else:
         device = torch.device("cpu")
-    device = torch.device("cpu")
+    # device = torch.device("cpu")
     def __init__(self, outputOfModel):
         '''
 

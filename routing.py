@@ -1,6 +1,6 @@
+import time
 from utils.osmgraph import GraphFunctions
 from utils.spaitalShape import Point, OdPair, Box
-import time
 import osmnx as ox
 # Profiling: python -m cProfile -o profile.pstats routing.py
 # Visualize profile: snakeviz profile.pstats
@@ -34,8 +34,7 @@ class LocationRequest:
         # Monday
         self.dayOfTheWeek = dayOfTheWeek
         # 9 am
-        time = timeOfTheDay
-        self.timeOfTheDay = self.calTimeStage(time)
+        self.timeOfTheDay = self.calTimeStage(timeOfTheDay)
         self.boundingBox = boundingBox
 
     def calTimeStage(self, t):
@@ -71,7 +70,8 @@ def main():
     # 9am
     timeOfTheDay = 9
 
-    bigBbox = False
+    bigBbox = True
+    lookupTableName = "lUTableForFuel"
     if bigBbox:
         #big bounding box: from murphy company (-93.22025, 44.9827), travel 70 miles
         distance = 70
@@ -82,15 +82,18 @@ def main():
     else:
         # small bounding box
         boundingBox = Box(-93.4975, -93.1850, 44.7458, 45.0045)
+        lookupTableName = "lUTableForFuel_smallBbox"
     # Request
     locationRequest = LocationRequest(origin, destination, temperature, mass, dayOfTheWeek , timeOfTheDay, boundingBox)
 
     # Loading graph (downloading it if not exist) and pre-processing
-    graphWithElevation = GraphFunctions.loadGrph(locationRequest)
-
+    graphWithElevation = GraphFunctions.loadGraph(locationRequest)
+    print("time used for loading graph:", time.time() - startTime)
     # eco-routing
     # the result trajectory will be saved in "./results/filename"
-    ecoEdgePath,length, energy, time = GraphFunctions.routingAndSaveResults(graphWithElevation, locationRequest, mode = 'fuel', filename = 'ecoRoute.json', usingLookUpTable=True, newLookUpTable = True, parameterForTableIni = ParameterForTableIni())
+    ecoEdgePath,length, energy, travelTime = GraphFunctions.routingAndSaveResults(graphWithElevation, locationRequest, mode = 'fuel',
+                                                                            filename = 'ecoRoute.json', usingLookUpTable=True,
+                                                                            newLookUpTable = False, lookUpTableName= lookupTableName, parameterForTableIni = ParameterForTableIni())
 
     # shortest route
     # shortestNodePath = GraphFunctions.findShortestPath(graphWithElevation, locationRequest)
@@ -102,9 +105,11 @@ def main():
     # fastestEdgePath = GraphFunctions.routingAndSaveResults(graphWithElevation, locationRequest, mode = 'time', filename = 'fastestRoute.json', usingLookUpTable=True, newLookUpTable = True, parameterForTableIni = ParameterForTableIni())
 
     # save the routing results to the "./results/filename.html"
-    #GraphFunctions.plotRoutes([ecoEdgePath, fastestEdgePath], graphWithElevation.getEdges(), ['green', 'red'], filename='routingresults', labels=['eco route', 'fastest route'])
+    GraphFunctions.plotRoutes([ecoEdgePath], graphWithElevation.getEdges(), ['green'], filename='routingresults', labels=['eco route'])
     #plotRoutes([ecoEdgePath, fastestEdgePath, shortestPath], graphWithElevation.getEdges(), ['green','red','blue'], 'routingresults', ['eco route','fastest route','shortest route'])
 
+    endTime = time.time()
+    print("time used:" , endTime-startTime)
 
 if __name__ == '__main__':
     main()
