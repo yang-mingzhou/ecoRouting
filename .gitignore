@@ -136,3 +136,5 @@ lookupTables/
 Graphs/
 data/graph_shapefile/
 results/*.json
+results/*.html
+*.json
