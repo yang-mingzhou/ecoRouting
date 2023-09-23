@@ -532,7 +532,7 @@ class GraphFunctions():
     @staticmethod
     def findEcoPathAndCalEnergy(osmGraph, localRequest, lookUpTable):
         ecoPath, ecoEnergy, ecoEdgePath = osmGraph.ecoPath(localRequest, lookUpTable)
-        print("ecoPath:", ecoPath, "ecoEnergy:", ecoEnergy, ecoEdgePath)
+        # print("ecoPath:", ecoPath, "ecoEnergy:", ecoEnergy, ecoEdgePath)
         # osmGraph.plotPath(ecoPath, "eco route.pdf")
         return ecoPath, ecoEnergy, ecoEdgePath
 
@@ -540,7 +540,7 @@ class GraphFunctions():
     def findFastestPathAndCalTime(osmGraph, localRequest, lookUpTable):
 
         fastestPath, shortestTime, fastEdgePath = osmGraph.fastestPath(localRequest, lookUpTable)
-        print("fastestPath:", fastestPath, "shortestTime:", shortestTime, fastEdgePath)
+        # print("fastestPath:", fastestPath, "shortestTime:", shortestTime, fastEdgePath)
         # osmGraph.plotPath(fastestPath,"fastest route.pdf")
         return fastestPath, shortestTime, fastEdgePath
 
@@ -595,7 +595,7 @@ class GraphFunctions():
             else:
                 lutablefilename = lookUpTableName
             # filename for lookup table
-            windowIdDictFilename = "./results/windowIdDict"
+            windowIdDictFilename = "./results/"+lookUpTableName+"_windowIdDict"
             if newLookUpTable:
                 lookUpTable = GraphFunctions.trainNewLUTable(parameterForTableIni, graphWithElevation, locationRequest,
                                                              lutablefilename, windowIdDictFilename, mode=mode)

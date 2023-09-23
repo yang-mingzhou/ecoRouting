@@ -34,7 +34,7 @@ class NodeInPathGraph:
     def getStr(self):
         return str(self.window.minusSeg) + ',' + str(self.window) + ',' + str(self.node)
 
-    def valid(self):
-        return self.window.valid()
+    # def valid(self):
+    #     return self.window.valid()
 
 

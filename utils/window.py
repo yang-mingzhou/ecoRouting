@@ -47,6 +47,8 @@ def uTurn(edgesDict, midSegID, sucSegID):
         return False
     departNode = edgesDict[midSegID]["u"]
     destNode = edgesDict[sucSegID]["v"]
+    # if departNode == destNode:
+    #     print("found one: ", departNode, destNode)
     return departNode == destNode
 
 

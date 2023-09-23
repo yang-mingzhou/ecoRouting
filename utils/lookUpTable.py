@@ -19,9 +19,11 @@ class LookUpTable:
             holeTable = self.generate(parameterForTableIni)
             self.saveTable(filename, holeTable)
             self.lookUpTable = holeTable[self.request]
+            print("look up table generated")
         else:
             self.lookUpTable = self.readTable(filename)
-        print("look up table generated")
+            print("look up table loaded")
+
 
     def __len__(self):
         return len(self.lookUpTable)

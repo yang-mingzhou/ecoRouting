@@ -56,8 +56,9 @@ class ParameterForTableIni:
         self.temperatureList = [1]
         # mean, min, max, est
         self.massList = [23000, 15875, 36287, 31751]
+        # self.massList = [23000]
         self.dayList = [1]
-        self.timeList = [3, 4]
+        self.timeList = [3]
 
 
 def main():
@@ -72,36 +73,36 @@ def main():
     ]
 
     routeList = [
-        ["Route #1",
+        ["Route#1",
          ["Murphy Logistics Solutions",
           "Shakopee Distribution Center",
           "Johnson Outdoors",
           "Winegar Inc",
           "Murphy Logistics Solutions"]],
 
-        ["Route #2",
+        ["Route#2",
          ["Murphy Logistics Solutions",
           "Shakopee Distribution Center",
           "Johnson Outdoors",
           "Murphy Logistics Solutions"]],
 
-        ["Route #3",
+        ["Route#3",
          ["Murphy Logistics Solutions",
           "McLane - Northfield",
           "Murphy Logistics Solutions"]],
 
-        ["Route #4",
+        ["Route#4",
          ["Murphy Logistics Solutions",
           "Core-Mark - Plymouth",
           "Murphy Logistics Solutions"]],
 
-        ["Route #7",
+        ["Route#7",
          ["Murphy Logistics Solutions",
           "Murphy - Fridley Distribution Center",
           "LCS Communications",
           "Murphy Logistics Solutions"]],
 
-        ["Route #10",
+        ["Route#10",
          ["Murphy Logistics Solutions",
           "Heinrich Envelope Corp",
           "Shakopee Distribution Center",
@@ -111,7 +112,7 @@ def main():
 
     flagFirstIter = True
     for i in range(len(routeList)):
-        print("working on ", routeList[i][0])
+        print("working on", routeList[i][0])
         pathList = []
         totalEcotoll = 0
         totalTime = 0
@@ -120,7 +121,7 @@ def main():
             # Murphy depot => Shakopee East (Depot)
             origin, destination = Point(tripList[i][j][1], tripList[i][j][0]), Point(tripList[i][j+1][1], tripList[i][j+1][0])
             temperature = 1
-            mass = 23000
+            mass = 31751
             # Monday
             dayOfTheWeek = 1
             # 9am
@@ -133,7 +134,7 @@ def main():
                 distance = distance*1609.34 # mile->km
                 bbox = ox.utils_geo.bbox_from_point((44.9827, -93.22025), dist=distance, project_utm = False, return_crs = False)
                 boundingBox = Box(bbox[-1], bbox[-2], bbox[-3], bbox[-4])
-                print(boundingBox)
+                # print(boundingBox)
             else:
                 # small bounding box
                 boundingBox = Box(-93.4975, -93.1850, 44.7458, 45.0045)
@@ -144,7 +145,7 @@ def main():
             # Loading graph (downloading it if not exist) and pre-processing
             if flagFirstIter:
                 graphWithElevation = GraphFunctions.loadGraph(locationRequest)
-                newLookUpTable = False
+                newLookUpTable = True
                 flagFirstIter = False
             else:
                 newLookUpTable = False
@@ -175,8 +176,8 @@ def main():
             totalTime += time
             totalLength += length
         GraphFunctions.plotRoutes(pathList, graphWithElevation.getEdges(), ['green'],
-                                  filename='routingresults'+str(i+1), labels=['subRoute'+str(x) for x in range(len(routeList[i][1])-1)])
-        print("totalEcotoll: {}, totalTime: {}, totalLength: {}".format(totalEcotoll, totalTime, totalLength))
+                                  filename='routingresults'+routeList[i][0], labels=['subRoute'+str(x) for x in range(len(routeList[i][1])-1)])
+        print("totalEcotoll: {} liters, totalTime: {} seconds, totalLength: {} meters".format(totalEcotoll, totalTime, totalLength))
 
 if __name__ == '__main__':
     main()

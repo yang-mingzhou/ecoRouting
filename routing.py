@@ -70,7 +70,7 @@ def main():
     # 9am
     timeOfTheDay = 9
 
-    bigBbox = True
+    bigBbox = False
     lookupTableName = "lUTableForFuel"
     if bigBbox:
         #big bounding box: from murphy company (-93.22025, 44.9827), travel 70 miles

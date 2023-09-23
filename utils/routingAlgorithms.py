@@ -113,7 +113,7 @@ class Dijkstra:
             nextNodeId = edgeIdAndV[1]
             nextWindow = Window(curNodeInPathGraph.window.prevSeg, curNodeInPathGraph.window.midSeg, curNodeInPathGraph.window.sucSeg, edgeIdInGdf)
             nextNodeInPathGraph = NodeInPathGraph(nextWindow, nextNodeId, curNodeInPathGraph, edgeIdInGdf)
-            if nextWindow.valid() and nextNodeInPathGraph not in self.passedNodesSet:
+            if nextWindow.valid(self.edgesDict) and nextNodeInPathGraph not in self.passedNodesSet:
                 valOfNextNode = self.calVal(nextNodeInPathGraph)
                 self.updateQ(nextNodeInPathGraph, valOfNextNode+valOfCurNode)
 
@@ -209,7 +209,7 @@ class AStar(Dijkstra):
             nextNodeId = edgeIdAndV[1]
             nextWindow = Window(curNodeInPathGraph.window.prevSeg, curNodeInPathGraph.window.midSeg, curNodeInPathGraph.window.sucSeg, edgeIdInGdf)
             nextNodeInPathGraph = NodeInPathGraph(nextWindow, nextNodeId, curNodeInPathGraph, edgeIdInGdf)
-            if nextWindow.valid() and nextNodeInPathGraph not in self.passedNodesSet:
+            if nextWindow.valid(self.edgesDict) and nextNodeInPathGraph not in self.passedNodesSet:
                 if nextNodeInPathGraph in self.hValues:
                     hValOfNextNode = self.hValues[nextNodeInPathGraph]
                 else:
