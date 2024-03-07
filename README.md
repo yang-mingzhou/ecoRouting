@@ -13,24 +13,6 @@ tqdm, bintrees, plotly are also required
 Some scripts (for map matching) require cygwin and python 2.7
 
 ## Pipeline:
-
-1. Input: 
-   (1) an origin-destination (O-D) pair lat-lon coordinates; 
    
-   (2)  the mass of the truck; 
-   
-   (3) the day of the week;
-   
-   (4) the time of the day.
-   
-## Files
 
-1. 
-
-Change Log
------
-
-### 7/27/2022
-Version 1.0 Add static method
-
-Version 2.0 Split the user interface from the implementation by moving helper functions to osmgraph.GraphFunctions
+![workflow.png](workflow.png)
