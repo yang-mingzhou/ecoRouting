@@ -68,7 +68,7 @@ class LookUpTable:
                         db = WindowFeatureDataLoader(numericalFeatures, categoricalFeatures)
                         del windowFeatureList,numericalFeatures, categoricalFeatures
                         gc.collect()
-                        dloader = DataLoader(db, batch_size=1048576, num_workers=0)
+                        dloader = DataLoader(db, batch_size=524288, num_workers=0)
                         for step, (idx,n,c) in tqdm(enumerate(dloader)):
                             energyOfWindows = parameterForTableIni.estimationModel.predictFromTensor(n,c).tolist()
                         #print(energyOfWindows.shape)

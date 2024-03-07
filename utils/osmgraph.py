@@ -90,14 +90,16 @@ class OsmGraph:
 
     def ecoPath(self, localRequest, lookUpTable):
         self.origNode, self.destNode = self.getODNodesFromODPair(localRequest.odPair)
-        self.estimationModel = EstimationModel("fuel")
+        # self.estimationModel = EstimationModel("fuel")
+        self.estimationModel = MultiTaskEstimationModel("fuel")
         #ecoPath, ecoEnergy, ecoEdgePath = self.dijkstra()
         ecoPath, ecoEnergy, ecoEdgePath = self.aStar(localRequest, lookUpTable)
         return ecoPath, ecoEnergy, ecoEdgePath
 
     def fastestPath(self, localRequest, lookUpTable = None):
         self.origNode, self.destNode = self.getODNodesFromODPair(localRequest.odPair)
-        self.estimationModel =EstimationModel("time")
+        # self.estimationModel =EstimationModel("time")
+        self.estimationModel = MultiTaskEstimationModel("time")
         fastestPath, shortestTime, fastestEdgePath = self.dijkstra(localRequest, lookUpTable)
         return fastestPath, shortestTime, fastestEdgePath
 
@@ -176,8 +178,8 @@ class OsmGraph:
     def __calculateValue(self, path, estimationType):
         edgeDict = self.getEdgesDict()
         pointList = []
-        estimationModel = EstimationModel(estimationType)
-        #estimationModel = EstimationModel(estimationType)
+        # estimationModel = EstimationModel(estimationType)
+        estimationModel = MultiTaskEstimationModel(estimationType)
         value = 0
         firstSeg = path[0]
         window = Window(-1, -1, -1, firstSeg)
@@ -286,7 +288,7 @@ class GraphFunctions():
         lat_center = np.mean(lat)
         long_center = np.mean(long)
         # defining the layout using mapbox_style
-        fig.update_layout(mapbox_style="stamen-terrain",
+        fig.update_layout(mapbox_style="open-street-map",
                           mapbox_center_lat=30, mapbox_center_lon=-80)
         # for different trips, maybe you should modify the zoom value
         fig.update_layout(margin={"r": 0, "t": 0, "l": 0, "b": 0},
@@ -305,7 +307,7 @@ class GraphFunctions():
         length = osmGraph.totalLength(edgePath)
         energy = osmGraph.totalEnergy(edgePath)
         time = osmGraph.totalTime(edgePath)
-        print(pathname + ":" + f"{numberOfSegments} segments, {length} meters, {energy} liters, {time} seconds")
+        print(pathname + ":" + f"{numberOfSegments} segments, {length} meters, {energy/100} liters, {time} seconds")
         return length, energy, time
 
     # plot map matching results
@@ -360,7 +362,7 @@ class GraphFunctions():
         long_center = np.mean(long_edge)
         zoom = 9.5
         # defining the layout using mapbox_style
-        fig.update_layout(mapbox_style="stamen-terrain",
+        fig.update_layout(mapbox_style="open-street-map",
                           mapbox_center_lat=30, mapbox_center_lon=-80)
         fig.update_layout(margin={"r": 0, "t": 0, "l": 0, "b": 0},
                           mapbox={
@@ -372,7 +374,7 @@ class GraphFunctions():
 
     @staticmethod
     def __plotFigAndSave(fig, lat_center, long_center, filename):
-        fig.update_layout(mapbox_style="stamen-terrain",
+        fig.update_layout(mapbox_style="open-street-map",
                           mapbox_center_lat=30, mapbox_center_lon=-80)
         fig.update_layout(margin={"r": 0, "t": 0, "l": 0, "b": 0},
                           mapbox={
@@ -473,7 +475,8 @@ class GraphFunctions():
         paramForTable.windowList = windowList
         paramForTable.osmGraph = osmGraph
         paramForTable.estMode = estMode
-        paramForTable.estimationModel = EstimationModel(estMode)
+        # paramForTable.estimationModel = EstimationModel(estMode)
+        paramForTable.estimationModel = MultiTaskEstimationModel(estMode)
 
     @staticmethod
     def extractGraphOf(boundingBox):

@@ -1,4 +1,4 @@
-from utils.window import Window
+from utils.window import Window, calPrevOrientation
 from utils.windowNode import NodeInPathGraph
 from collections import defaultdict
 import math
@@ -307,4 +307,54 @@ class AStarFromLUTable(AStar):
         if curNodeInPathGraph.window.midSeg == -1:
             return 0
         else:
-            return self.lookUpTable.extractValue(curNodeInPathGraph.window)
+            curVal = self.lookUpTable.extractValue(curNodeInPathGraph.window)
+            return self.__postprocessing(curNodeInPathGraph.window, curVal)
+
+    def __postprocessing(self, window, curVal):
+        '''
+        postprocessing: add heuristic of the path preference:
+        h1. penalty the different of speed limit
+        h2. penalty for a turn (higher coefficient for high speed)
+        h3. prefer a highway segment
+        '''
+
+        # h1
+        # curVal = self.__intersectionPenalty(window, curVal)
+        # h2
+        # curVal = self.__turnPenalty(window, curVal)
+        # Final cost function incorporating both energy estimation and speed change penalty
+        return curVal
+
+    def __intersectionPenalty(self, window, curVal):
+        # Speed limits
+        if window.prevSeg is None or window.prevSeg == -1 or window.midSeg == -1 or window.sucSeg == -1:
+            return curVal
+
+        endPointType = self.edgesDict[window.midSeg]["destSignalCategoried"]
+
+        # print(endPointType)
+
+        if endPointType == 6 or endPointType == 2:
+            midSpeedLimit = self.edgesDict[window.midSeg]["speedLimit"]
+            sucSpeedLimit = self.edgesDict[window.sucSeg]["speedLimit"]
+
+            # Calculate speed change penalty
+            speedWeight = 0
+            penalty = speedWeight * (-0.2*midSpeedLimit+sucSpeedLimit)
+            return curVal + penalty
+        return curVal
+
+    def __turnPenalty(self, window, curVal):
+        if window.prevSeg is None or window.prevSeg == -1 or window.midSeg == -1 or window.sucSeg == -1:
+            return curVal
+        turnFromPrev = calPrevOrientation(self.edgesDict, self.edgesDict[window.midSeg], window.prevSeg)*33.3524612794841-1.46016587027665
+        turnToSuc = calPrevOrientation(self.edgesDict, self.edgesDict[window.sucSeg], window.midSeg)*33.3524612794841-1.46016587027665
+        turnFromPrev = abs(turnFromPrev/180)
+        turnToSuc = abs(turnToSuc/180)
+        turnWeight = 0.2
+        return curVal + turnWeight*(turnFromPrev + turnToSuc)
+
+
+
+
+

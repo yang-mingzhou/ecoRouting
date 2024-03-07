@@ -55,59 +55,97 @@ class ParameterForTableIni:
     def __init__(self):
         self.temperatureList = [1]
         # mean, min, max, est
-        self.massList = [23000, 15875, 36287, 31751]
+        # self.massList = [15875, 17009, 36287, 31751]
+        self.massList =[14740, 16540, 32740, 20000]
         # self.massList = [23000]
         self.dayList = [1]
-        self.timeList = [3]
+        self.timeList = [2]
 
 
 def main():
     # A trip is composed a sequence of o-d pairs
+    # tripList = [
+    # [(44.98184729840299, -93.21901507372945), (44.786736270002265, -93.46675015774838), (44.17707635424199, -93.93739234659743), (44.06691076060971, -93.50769869525858), (44.98184729840299, -93.21901507372945)],
+    # [(44.98184729840299, -93.21901507372945), (44.786736270002265, -93.46675015774838), (44.17707635424199, -93.93739234659743), (44.98184729840299, -93.21901507372945)],
+    # [(44.98184729840299, -93.21901507372945), (44.454086469960494, -93.17591848620144), (44.98184729840299, -93.21901507372945)],
+    # [(44.98184729840299, -93.21901507372945), (44.989664361362806, -93.40828280308729), (44.98184729840299, -93.21901507372945)],
+    # [(44.98184729840299, -93.21901507372945), (45.05622822219631, -93.26844895683685), (45.090111537648816, -93.40307364125155), (44.98184729840299, -93.21901507372945)],
+    # [(44.98184729840299, -93.21901507372945), (44.98930327388153, -93.35529921740897), (44.786736270002265, -93.46675015774838), (44.98184729840299, -93.21901507372945)]
+    # ]
+
     tripList = [
-    [(44.98184729840299, -93.21901507372945), (44.786736270002265, -93.46675015774838), (44.17707635424199, -93.93739234659743), (44.06691076060971, -93.50769869525858), (44.98184729840299, -93.21901507372945)],
-    [(44.98184729840299, -93.21901507372945), (44.786736270002265, -93.46675015774838), (44.17707635424199, -93.93739234659743), (44.98184729840299, -93.21901507372945)],
-    [(44.98184729840299, -93.21901507372945), (44.454086469960494, -93.17591848620144), (44.98184729840299, -93.21901507372945)],
-    [(44.98184729840299, -93.21901507372945), (44.989664361362806, -93.40828280308729), (44.98184729840299, -93.21901507372945)],
-    [(44.98184729840299, -93.21901507372945), (45.05622822219631, -93.26844895683685), (45.090111537648816, -93.40307364125155), (44.98184729840299, -93.21901507372945)],
-    [(44.98184729840299, -93.21901507372945), (44.98930327388153, -93.35529921740897), (44.786736270002265, -93.46675015774838), (44.98184729840299, -93.21901507372945)]
+        [(44.981875, -93.218940), (44.787424, -93.469224)],
+        [(44.787424, -93.469224), (44.177030, -93.937412)],
+        [(44.177030, -93.937412), (44.066928, -93.507766)],
+        [(44.066928, -93.507766), (44.981875, -93.218940)],
+        [(44.981875, -93.218940), (44.454193, -93.175832)],
+        [(44.454193, -93.175832), (44.981875, -93.218940)]
     ]
+
+    # routeList = [
+    #     ["Route#1",
+    #      ["Murphy Logistics Solutions",
+    #       "Shakopee Distribution Center",
+    #       "Johnson Outdoors",
+    #       "Winegar Inc",
+    #       "Murphy Logistics Solutions"]],
+    #
+    #     ["Route#2",
+    #      ["Murphy Logistics Solutions",
+    #       "Shakopee Distribution Center",
+    #       "Johnson Outdoors",
+    #       "Murphy Logistics Solutions"]],
+    #
+    #     ["Route#3",
+    #      ["Murphy Logistics Solutions",
+    #       "McLane - Northfield",
+    #       "Murphy Logistics Solutions"]],
+    #
+    #     ["Route#4",
+    #      ["Murphy Logistics Solutions",
+    #       "Core-Mark - Plymouth",
+    #       "Murphy Logistics Solutions"]],
+    #
+    #     ["Route#7",
+    #      ["Murphy Logistics Solutions",
+    #       "Murphy - Fridley Distribution Center",
+    #       "LCS Communications",
+    #       "Murphy Logistics Solutions"]],
+    #
+    #     ["Route#10",
+    #      ["Murphy Logistics Solutions",
+    #       "Heinrich Envelope Corp",
+    #       "Shakopee Distribution Center",
+    #       "Murphy Logistics Solutions"]]
+    # ]
 
     routeList = [
-        ["Route#1",
-         ["Murphy Logistics Solutions",
-          "Shakopee Distribution Center",
-          "Johnson Outdoors",
-          "Winegar Inc",
-          "Murphy Logistics Solutions"]],
+        ["LegA",
+         ["Origin",
+          "Destination"]],
 
-        ["Route#2",
-         ["Murphy Logistics Solutions",
-          "Shakopee Distribution Center",
-          "Johnson Outdoors",
-          "Murphy Logistics Solutions"]],
+        ["LegB",
+         ["Origin",
+          "Destination"]],
 
-        ["Route#3",
-         ["Murphy Logistics Solutions",
-          "McLane - Northfield",
-          "Murphy Logistics Solutions"]],
+        ["LegC",
+         ["Origin",
+          "Destination"]],
 
-        ["Route#4",
-         ["Murphy Logistics Solutions",
-          "Core-Mark - Plymouth",
-          "Murphy Logistics Solutions"]],
+        ["LegD",
+         ["Origin",
+          "Destination"]],
 
-        ["Route#7",
-         ["Murphy Logistics Solutions",
-          "Murphy - Fridley Distribution Center",
-          "LCS Communications",
-          "Murphy Logistics Solutions"]],
+        ["LegE",
+         ["Origin",
+          "Destination"]],
 
-        ["Route#10",
-         ["Murphy Logistics Solutions",
-          "Heinrich Envelope Corp",
-          "Shakopee Distribution Center",
-          "Murphy Logistics Solutions"]]
+        ["LegF",
+         ["Origin",
+          "Destination"]]
     ]
+
+    massList = [14740, 16540, 14740, 14740, 32740, 20000]
 
 
     flagFirstIter = True
@@ -121,11 +159,11 @@ def main():
             # Murphy depot => Shakopee East (Depot)
             origin, destination = Point(tripList[i][j][1], tripList[i][j][0]), Point(tripList[i][j+1][1], tripList[i][j+1][0])
             temperature = 1
-            mass = 31751
+            mass = massList[i]
             # Monday
             dayOfTheWeek = 1
             # 9am
-            timeOfTheDay = 9
+            timeOfTheDay = 6
             bigBbox = True
             lookupTableName = "lUTableForFuel"
             if bigBbox:
@@ -145,7 +183,7 @@ def main():
             # Loading graph (downloading it if not exist) and pre-processing
             if flagFirstIter:
                 graphWithElevation = GraphFunctions.loadGraph(locationRequest)
-                newLookUpTable = True
+                newLookUpTable = False
                 flagFirstIter = False
             else:
                 newLookUpTable = False
@@ -154,7 +192,8 @@ def main():
             # the result trajectory will be saved in "./results/filename"
             trajFileName = 'eco{}_from{}_to{}.json'.format(routeList[i][0], routeList[i][1][j], routeList[i][1][j+1]).replace(" ", "_")
             ecoEdgePath, length, energy, time = GraphFunctions.routingAndSaveResults(graphWithElevation, locationRequest, mode = 'fuel', filename = trajFileName,
-                                                                                     usingLookUpTable=True, newLookUpTable = newLookUpTable, lookUpTableName= lookupTableName, parameterForTableIni = ParameterForTableIni())
+                                                                                     usingLookUpTable=True, newLookUpTable = newLookUpTable, lookUpTableName= lookupTableName,
+                                                                                     parameterForTableIni = ParameterForTableIni())
 
             # shortest route
             # shortestNodePath = GraphFunctions.findShortestPath(graphWithElevation, locationRequest)
@@ -163,7 +202,12 @@ def main():
 
             # fastest route
             # the result trajectory will be saved in "./results/filename"
-            # fastestEdgePath, length, energy, time = GraphFunctions.routingAndSaveResults(graphWithElevation, locationRequest, mode = 'time', filename = str(i)+str(j)+'fastestRoute.json', usingLookUpTable=True, newLookUpTable = True, parameterForTableIni = ParameterForTableIni())
+            # trajFileName = 'fastest{}_from{}_to{}.json'.format(routeList[i][0], routeList[i][1][j],
+            #                                                routeList[i][1][j + 1]).replace(" ", "_")
+            # fastestEdgePath, length, energy, time = GraphFunctions.routingAndSaveResults(graphWithElevation, locationRequest,
+            #                                                                              mode = 'time', filename = trajFileName,
+            #                                                                              usingLookUpTable=True, newLookUpTable = newLookUpTable,
+            #                                                                              lookUpTableName= "lUTableForTime", parameterForTableIni = ParameterForTableIni())
             # fastPaths[i,j] = fastestEdgePath
             # dictRes[(i, j, "fast")] = (length, energy, time)
 
@@ -172,12 +216,13 @@ def main():
             #plotRoutes([ecoEdgePath, fastestEdgePath, shortestPath], graphWithElevation.getEdges(), ['green','red','blue'], 'routingresults', ['eco route','fastest route','shortest route'])
 
             pathList.append(ecoEdgePath)
+            # pathList.append(fastestEdgePath)
             totalEcotoll += energy
             totalTime += time
             totalLength += length
         GraphFunctions.plotRoutes(pathList, graphWithElevation.getEdges(), ['green'],
                                   filename='routingresults'+routeList[i][0], labels=['subRoute'+str(x) for x in range(len(routeList[i][1])-1)])
-        print("totalEcotoll: {} liters, totalTime: {} seconds, totalLength: {} meters".format(totalEcotoll, totalTime, totalLength))
+        print("totalEcotoll: {} liters, totalTime: {} seconds, totalLength: {} meters".format(totalEcotoll/100, totalTime, totalLength))
 
 if __name__ == '__main__':
     main()

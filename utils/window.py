@@ -73,6 +73,8 @@ def calPrevOrientation(edgesDict, curEdge, prevEdgeId):
         c = curEdge['points'][1]
         orientation = ori_cal(a, b, c)
     orientation = (orientation + 1.46016587027665) / 33.3524612794841
+    # orientation = (orientation - 0.421857772) / 27.04632047
+
     return orientation
 
 
